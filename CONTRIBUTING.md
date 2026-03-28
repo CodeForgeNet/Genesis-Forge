@@ -13,8 +13,8 @@ Be excellent to each other. See [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md) if it
 ## Development Setup
 
 ```bash
-git clone https://github.com/[user]/genesis-forge
-cd genesis-forge
+git clone https://github.com/CodeForgeNet/Genesis-Forge
+cd Genesis-Forge
 node bin/setup.js --help
 ```
 
@@ -154,4 +154,4 @@ This helps the router know which agent last touched which file.
 
 ## Questions?
 
-Open an [issue](https://github.com/[user]/genesis-forge/issues) and tag it `question`.
+Open an [issue](https://github.com/CodeForgeNet/Genesis-Forge/issues) and tag it `question`.

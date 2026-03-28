@@ -50,7 +50,7 @@
 
 ## Workflows (Slash Commands)
 
-`/brainstorm` `/write-plan` `/execute-plan` `/create` `/debug` `/deploy` `/enhance` `/orchestrate` `/preview` `/status` `/test` `/ui-ux-pro-max` `/write-plan`
+`/brainstorm` `/write-plan` `/execute-plan` `/create` `/debug` `/deploy` `/enhance` `/orchestrate` `/preview` `/status` `/test` `/ui-ux-pro-max`
 
 See [`docs/WORKFLOWS.md`](./docs/WORKFLOWS.md) for full documentation.
 

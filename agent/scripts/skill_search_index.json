@@ -1,0 +1,2196 @@
+{
+  "access": [
+    "web-security-testing"
+  ],
+  "actor": [
+    "langgraph"
+  ],
+  "adapt": [
+    "behavioral-modes"
+  ],
+  "adaptive": [
+    "game-development/game-audio"
+  ],
+  "adr": [
+    "architecture"
+  ],
+  "advanced": [
+    "postgresql",
+    "vulnerability-scanner"
+  ],
+  "aesthetics": [
+    "frontend-design"
+  ],
+  "agent": [
+    "ai-agent-development",
+    "ai-agents-architect",
+    "ai-ml",
+    "parallel-agents"
+  ],
+  "agents": [
+    "ai-agent-development",
+    "ai-agents-architect",
+    "app-builder",
+    "langchain-architecture",
+    "parallel-agents",
+    "tool-design",
+    "ui-skills"
+  ],
+  "all": [
+    "test-fixing"
+  ],
+  "analysis": [
+    "architecture",
+    "error-debugging-error-analysis",
+    "parallel-agents",
+    "performance-profiling",
+    "seo-forensic-incident-response",
+    "vulnerability-scanner"
+  ],
+  "analyze": [
+    "codebase-cleanup-tech-debt",
+    "software-architecture"
+  ],
+  "analyzing": [
+    "architecture",
+    "error-debugging-error-analysis"
+  ],
+  "android": [
+    "mobile-design"
+  ],
+  "animation": [
+    "game-development/game-art"
+  ],
+  "anthropic": [
+    "prompt-caching"
+  ],
+  "any": [
+    "plan-writing",
+    "software-architecture",
+    "systematic-debugging",
+    "test-driven-development"
+  ],
+  "api": [
+    "api-documenter",
+    "api-patterns",
+    "api-security-testing",
+    "aws-serverless",
+    "documentation-templates",
+    "security-audit"
+  ],
+  "apis": [
+    "api-security-testing"
+  ],
+  "app": [
+    "app-builder",
+    "app-builder/templates",
+    "game-development/mobile-games",
+    "react-nextjs-development"
+  ],
+  "application": [
+    "ai-ml",
+    "app-builder",
+    "react-nextjs-development",
+    "security-audit",
+    "top-web-vulnerabilities",
+    "web-security-testing"
+  ],
+  "applications": [
+    "app-builder",
+    "app-builder/templates",
+    "aws-serverless",
+    "langchain-architecture",
+    "langgraph",
+    "rag-engineer",
+    "webapp-testing"
+  ],
+  "applies": [
+    "clean-code"
+  ],
+  "apps": [
+    "mobile-design",
+    "security-bluebook-builder"
+  ],
+  "architect": [
+    "ai-agents-architect",
+    "backend-architect",
+    "database-architect",
+    "seo-structure-architect"
+  ],
+  "architectural": [
+    "architecture",
+    "tool-design"
+  ],
+  "architecture": [
+    "ai-ml",
+    "architecture",
+    "backend-dev-guidelines",
+    "brainstorming",
+    "game-development/multiplayer",
+    "langchain-architecture",
+    "nodejs-best-practices",
+    "software-architecture",
+    "tailwind-patterns"
+  ],
+  "are": [
+    "codebase-cleanup-tech-debt",
+    "error-debugging-error-analysis"
+  ],
+  "art": [
+    "game-development/game-art"
+  ],
+  "asks": [
+    "test-fixing",
+    "top-web-vulnerabilities"
+  ],
+  "assess": [
+    "codebase-cleanup-tech-debt"
+  ],
+  "asset": [
+    "game-development/game-art"
+  ],
+  "async": [
+    "nodejs-best-practices"
+  ],
+  "att": [
+    "red-team-tactics"
+  ],
+  "attack": [
+    "red-team-tactics",
+    "vulnerability-scanner"
+  ],
+  "audio": [
+    "game-development/game-audio"
+  ],
+  "audit": [
+    "security-audit",
+    "seo-audit"
+  ],
+  "auditing": [
+    "security-audit"
+  ],
+  "augmented": [
+    "prompt-caching",
+    "rag-engineer",
+    "rag-implementation"
+  ],
+  "authentication": [
+    "api-security-testing",
+    "web-security-testing"
+  ],
+  "authorization": [
+    "api-security-testing"
+  ],
+  "autonomous": [
+    "ai-agent-development",
+    "ai-agents-architect"
+  ],
+  "aws": [
+    "aws-serverless"
+  ],
+  "backend": [
+    "backend-architect",
+    "backend-dev-guidelines"
+  ],
+  "balancing": [
+    "game-development/game-design"
+  ],
+  "basecontroller": [
+    "backend-dev-guidelines"
+  ],
+  "based": [
+    "behavioral-modes",
+    "game-development",
+    "red-team-tactics"
+  ],
+  "battery": [
+    "game-development/mobile-games"
+  ],
+  "before": [
+    "brainstorming",
+    "requesting-code-review",
+    "systematic-debugging",
+    "test-driven-development"
+  ],
+  "behavior": [
+    "behavioral-modes",
+    "brainstorming",
+    "mobile-design",
+    "systematic-debugging",
+    "webapp-testing"
+  ],
+  "behavioral": [
+    "behavioral-modes"
+  ],
+  "blue": [
+    "security-bluebook-builder"
+  ],
+  "bluebook": [
+    "security-bluebook-builder"
+  ],
+  "books": [
+    "security-bluebook-builder"
+  ],
+  "brainstorm": [
+    "behavioral-modes"
+  ],
+  "brainstorming": [
+    "brainstorming"
+  ],
+  "branches": [
+    "langgraph"
+  ],
+  "breakdowns": [
+    "plan-writing"
+  ],
+  "browser": [
+    "game-development/web-games",
+    "webapp-testing"
+  ],
+  "bug": [
+    "systematic-debugging"
+  ],
+  "bugfix": [
+    "test-driven-development"
+  ],
+  "build": [
+    "ai-agents-architect",
+    "security-bluebook-builder",
+    "tool-design"
+  ],
+  "builder": [
+    "app-builder",
+    "mcp-builder",
+    "personal-tool-builder",
+    "security-bluebook-builder"
+  ],
+  "builder/templates": [
+    "app-builder/templates"
+  ],
+  "building": [
+    "ai-agent-development",
+    "ai-agents-architect",
+    "app-builder",
+    "aws-serverless",
+    "frontend-design",
+    "langchain-architecture",
+    "langgraph",
+    "personal-tool-builder",
+    "rag-engineer",
+    "ui-skills"
+  ],
+  "builds": [
+    "docker-expert"
+  ],
+  "cache": [
+    "prompt-caching"
+  ],
+  "caching": [
+    "prompt-caching"
+  ],
+  "cag": [
+    "prompt-caching"
+  ],
+  "camera": [
+    "game-development/2d-games"
+  ],
+  "cameras": [
+    "game-development/3d-games"
+  ],
+  "can": [
+    "parallel-agents",
+    "tool-design"
+  ],
+  "capturing": [
+    "webapp-testing"
+  ],
+  "categories": [
+    "top-web-vulnerabilities"
+  ],
+  "cause": [
+    "seo-forensic-incident-response"
+  ],
+  "chain": [
+    "vulnerability-scanner"
+  ],
+  "chatgpt": [
+    "geo-fundamentals"
+  ],
+  "checklist": [
+    "code-review-checklist"
+  ],
+  "checkpoints": [
+    "executing-plans"
+  ],
+  "chunking": [
+    "rag-engineer",
+    "rag-implementation"
+  ],
+  "claude": [
+    "geo-fundamentals"
+  ],
+  "clean": [
+    "clean-code"
+  ],
+  "cleanup": [
+    "codebase-cleanup-tech-debt"
+  ],
+  "clear": [
+    "plan-writing"
+  ],
+  "code": [
+    "clean-code",
+    "code-review-checklist",
+    "documentation-templates",
+    "react-best-practices",
+    "requesting-code-review",
+    "software-architecture",
+    "test-driven-development"
+  ],
+  "codebase": [
+    "codebase-cleanup-tech-debt"
+  ],
+  "collaboration": [
+    "brainstorming"
+  ],
+  "comfort": [
+    "game-development/vr-ar"
+  ],
+  "comments": [
+    "documentation-templates"
+  ],
+  "common": [
+    "top-web-vulnerabilities"
+  ],
+  "completing": [
+    "requesting-code-review"
+  ],
+  "components": [
+    "react-nextjs-development"
+  ],
+  "compose": [
+    "docker-expert"
+  ],
+  "composition": [
+    "react-patterns"
+  ],
+  "comprehensive": [
+    "code-review-checklist",
+    "error-debugging-error-analysis",
+    "parallel-agents",
+    "security-audit"
+  ],
+  "conducting": [
+    "code-review-checklist"
+  ],
+  "configuration": [
+    "tailwind-patterns"
+  ],
+  "console": [
+    "game-development/pc-games"
+  ],
+  "constraints": [
+    "postgresql",
+    "ui-skills"
+  ],
+  "construction": [
+    "langgraph"
+  ],
+  "constructive": [
+    "brainstorming"
+  ],
+  "container": [
+    "docker-expert",
+    "tailwind-patterns"
+  ],
+  "containerization": [
+    "docker-expert"
+  ],
+  "contains": [
+    "app-builder/templates"
+  ],
+  "context": [
+    "mcp-builder"
+  ],
+  "control": [
+    "web-security-testing"
+  ],
+  "conventions": [
+    "mobile-design"
+  ],
+  "coordinates": [
+    "app-builder"
+  ],
+  "copying": [
+    "nodejs-best-practices"
+  ],
+  "covering": [
+    "ai-ml",
+    "api-security-testing",
+    "code-review-checklist",
+    "database",
+    "rag-implementation",
+    "security-audit"
+  ],
+  "covers": [
+    "aws-serverless",
+    "backend-dev-guidelines",
+    "langgraph",
+    "mobile-design",
+    "postgresql"
+  ],
+  "craft": [
+    "frontend-design"
+  ],
+  "create": [
+    "frontend-design"
+  ],
+  "creates": [
+    "app-builder"
+  ],
+  "creating": [
+    "app-builder/templates",
+    "mcp-builder",
+    "testing-patterns"
+  ],
+  "creative": [
+    "brainstorming"
+  ],
+  "crewai": [
+    "ai-agent-development"
+  ],
+  "criteria": [
+    "plan-writing"
+  ],
+  "css": [
+    "react-nextjs-development",
+    "tailwind-patterns"
+  ],
+  "custom": [
+    "ai-agent-development",
+    "personal-tool-builder"
+  ],
+  "cycle": [
+    "tdd-workflow"
+  ],
+  "cycles": [
+    "langgraph"
+  ],
+  "data": [
+    "database",
+    "postgresql"
+  ],
+  "database": [
+    "database",
+    "database-architect",
+    "database-design",
+    "database-optimizer",
+    "prisma-expert",
+    "rag-implementation"
+  ],
+  "databases": [
+    "database-design",
+    "rag-engineer"
+  ],
+  "debt": [
+    "codebase-cleanup-tech-debt"
+  ],
+  "debug": [
+    "behavioral-modes",
+    "prompt-engineering"
+  ],
+  "debugger": [
+    "debugger"
+  ],
+  "debugging": [
+    "error-debugging-error-analysis",
+    "systematic-debugging",
+    "webapp-testing"
+  ],
+  "decision": [
+    "api-patterns",
+    "architecture",
+    "database-design",
+    "deployment-procedures",
+    "nodejs-best-practices"
+  ],
+  "decisions": [
+    "architecture"
+  ],
+  "deep": [
+    "docker-expert",
+    "error-debugging-error-analysis"
+  ],
+  "dependencies": [
+    "plan-writing"
+  ],
+  "dependency": [
+    "backend-dev-guidelines"
+  ],
+  "deployment": [
+    "deployment-procedures",
+    "docker-expert"
+  ],
+  "design": [
+    "api-patterns",
+    "architecture",
+    "database",
+    "database-design",
+    "frontend-design",
+    "game-development/game-audio",
+    "game-development/game-design",
+    "langchain-architecture",
+    "mobile-design",
+    "postgresql",
+    "prisma-expert",
+    "software-architecture",
+    "tailwind-patterns",
+    "tool-design"
+  ],
+  "designed": [
+    "mcp-builder"
+  ],
+  "designing": [
+    "ai-agents-architect"
+  ],
+  "designs": [
+    "brainstorming"
+  ],
+  "detection": [
+    "red-team-tactics"
+  ],
+  "determines": [
+    "app-builder"
+  ],
+  "dev": [
+    "backend-dev-guidelines"
+  ],
+  "development": [
+    "ai-agent-development",
+    "ai-ml",
+    "backend-dev-guidelines",
+    "database",
+    "game-development",
+    "game-development/2d-games",
+    "game-development/3d-games",
+    "game-development/mobile-games",
+    "game-development/multiplayer",
+    "game-development/pc-games",
+    "game-development/vr-ar",
+    "game-development/web-games",
+    "nodejs-best-practices",
+    "react-nextjs-development",
+    "tdd-workflow",
+    "test-driven-development"
+  ],
+  "development/2d": [
+    "game-development/2d-games"
+  ],
+  "development/3d": [
+    "game-development/3d-games"
+  ],
+  "development/game": [
+    "game-development/game-art",
+    "game-development/game-audio",
+    "game-development/game-design"
+  ],
+  "development/mobile": [
+    "game-development/mobile-games"
+  ],
+  "development/multiplayer": [
+    "game-development/multiplayer"
+  ],
+  "development/pc": [
+    "game-development/pc-games"
+  ],
+  "development/vr": [
+    "game-development/vr-ar"
+  ],
+  "development/web": [
+    "game-development/web-games"
+  ],
+  "devops": [
+    "devops-troubleshooter"
+  ],
+  "different": [
+    "parallel-agents"
+  ],
+  "disciplined": [
+    "brainstorming"
+  ],
+  "distinctive": [
+    "frontend-design"
+  ],
+  "distributed": [
+    "error-debugging-error-analysis"
+  ],
+  "docker": [
+    "docker-expert"
+  ],
+  "docs": [
+    "documentation-templates"
+  ],
+  "doctrine": [
+    "mobile-design"
+  ],
+  "documentation": [
+    "architecture",
+    "documentation-templates"
+  ],
+  "documenter": [
+    "api-documenter"
+  ],
+  "domain": [
+    "parallel-agents"
+  ],
+  "driven": [
+    "aws-serverless",
+    "tdd-workflow",
+    "test-driven-development"
+  ],
+  "drops": [
+    "seo-forensic-incident-response"
+  ],
+  "dynamodb": [
+    "aws-serverless"
+  ],
+  "effectively": [
+    "tool-design"
+  ],
+  "embedding": [
+    "rag-engineer",
+    "rag-implementation"
+  ],
+  "enable": [
+    "mcp-builder"
+  ],
+  "encountering": [
+    "systematic-debugging"
+  ],
+  "engine": [
+    "game-development/pc-games",
+    "geo-fundamentals"
+  ],
+  "engineer": [
+    "ai-engineer",
+    "performance-engineer",
+    "rag-engineer"
+  ],
+  "engineering": [
+    "database",
+    "mobile-design",
+    "prompt-engineering",
+    "react-best-practices"
+  ],
+  "engines": [
+    "geo-fundamentals"
+  ],
+  "ensure": [
+    "clean-code"
+  ],
+  "error": [
+    "error-debugging-error-analysis",
+    "test-fixing"
+  ],
+  "evaluation": [
+    "architecture"
+  ],
+  "evasion": [
+    "red-team-tactics"
+  ],
+  "event": [
+    "aws-serverless"
+  ],
+  "evolving": [
+    "ui-skills"
+  ],
+  "execute": [
+    "executing-plans"
+  ],
+  "executing": [
+    "executing-plans"
+  ],
+  "expert": [
+    "ai-agents-architect",
+    "codebase-cleanup-tech-debt",
+    "docker-expert",
+    "error-debugging-error-analysis",
+    "langgraph",
+    "performance-engineer",
+    "personal-tool-builder",
+    "prisma-expert",
+    "prompt-engineering",
+    "rag-engineer"
+  ],
+  "expertise": [
+    "error-debugging-error-analysis",
+    "parallel-agents"
+  ],
+  "explain": [
+    "top-web-vulnerabilities"
+  ],
+  "express": [
+    "backend-dev-guidelines"
+  ],
+  "external": [
+    "mcp-builder"
+  ],
+  "factories": [
+    "testing-patterns"
+  ],
+  "factory": [
+    "testing-patterns"
+  ],
+  "failing": [
+    "test-fixing"
+  ],
+  "failure": [
+    "systematic-debugging"
+  ],
+  "fastapi": [
+    "fastapi-pro"
+  ],
+  "feature": [
+    "test-driven-development"
+  ],
+  "features": [
+    "ai-ml",
+    "brainstorming",
+    "game-development/pc-games",
+    "plan-writing",
+    "postgresql",
+    "requesting-code-review"
+  ],
+  "first": [
+    "mobile-design",
+    "personal-tool-builder",
+    "tailwind-patterns"
+  ],
+  "fix": [
+    "test-fixing"
+  ],
+  "fixes": [
+    "systematic-debugging"
+  ],
+  "fixing": [
+    "test-fixing"
+  ],
+  "flaws": [
+    "top-web-vulnerabilities",
+    "web-security-testing"
+  ],
+  "focused": [
+    "software-architecture"
+  ],
+  "following": [
+    "testing-patterns"
+  ],
+  "forensic": [
+    "seo-forensic-incident-response"
+  ],
+  "formats": [
+    "api-patterns"
+  ],
+  "framework": [
+    "architecture",
+    "game-development/web-games",
+    "langchain-architecture",
+    "langgraph",
+    "nodejs-best-practices"
+  ],
+  "friendly": [
+    "documentation-templates"
+  ],
+  "frontend": [
+    "frontend-design",
+    "react-nextjs-development",
+    "webapp-testing"
+  ],
+  "full": [
+    "app-builder"
+  ],
+  "functionality": [
+    "code-review-checklist",
+    "webapp-testing"
+  ],
+  "functions": [
+    "aws-serverless",
+    "testing-patterns"
+  ],
+  "fundamentals": [
+    "geo-fundamentals",
+    "seo-fundamentals"
+  ],
+  "game": [
+    "game-development",
+    "game-development/2d-games",
+    "game-development/3d-games",
+    "game-development/game-art",
+    "game-development/game-audio",
+    "game-development/game-design",
+    "game-development/mobile-games",
+    "game-development/multiplayer",
+    "game-development/pc-games",
+    "game-development/vr-ar",
+    "game-development/web-games"
+  ],
+  "games": [
+    "game-development/2d-games",
+    "game-development/3d-games",
+    "game-development/mobile-games",
+    "game-development/pc-games",
+    "game-development/web-games"
+  ],
+  "gateway": [
+    "aws-serverless"
+  ],
+  "gdd": [
+    "game-development/game-design"
+  ],
+  "generation": [
+    "prompt-caching",
+    "rag-engineer",
+    "rag-implementation"
+  ],
+  "generative": [
+    "geo-fundamentals"
+  ],
+  "generic": [
+    "frontend-design"
+  ],
+  "geo": [
+    "geo-fundamentals"
+  ],
+  "github": [
+    "clean-code",
+    "security-bluebook-builder",
+    "tool-design",
+    "ui-skills"
+  ],
+  "global": [
+    "react-state-management"
+  ],
+  "grade": [
+    "frontend-design",
+    "langgraph"
+  ],
+  "graph": [
+    "langgraph"
+  ],
+  "graphql": [
+    "api-patterns",
+    "api-security-testing"
+  ],
+  "green": [
+    "tdd-workflow"
+  ],
+  "grouping": [
+    "test-fixing"
+  ],
+  "guide": [
+    "mcp-builder",
+    "prompt-engineering",
+    "software-architecture",
+    "ui-skills"
+  ],
+  "guidelines": [
+    "backend-dev-guidelines",
+    "documentation-templates",
+    "react-best-practices"
+  ],
+  "hardening": [
+    "security-audit"
+  ],
+  "have": [
+    "executing-plans"
+  ],
+  "high": [
+    "clean-code",
+    "frontend-design",
+    "mcp-builder"
+  ],
+  "hnsw": [
+    "vector-index-tuning"
+  ],
+  "hooks": [
+    "react-patterns"
+  ],
+  "ideas": [
+    "brainstorming"
+  ],
+  "identify": [
+    "top-web-vulnerabilities"
+  ],
+  "identifying": [
+    "codebase-cleanup-tech-debt"
+  ],
+  "identity": [
+    "frontend-design"
+  ],
+  "image": [
+    "docker-expert"
+  ],
+  "implement": [
+    "behavioral-modes"
+  ],
+  "implementation": [
+    "ai-ml",
+    "executing-plans",
+    "rag-implementation",
+    "test-driven-development"
+  ],
+  "implementing": [
+    "error-debugging-error-analysis",
+    "langchain-architecture",
+    "plan-writing",
+    "requesting-code-review",
+    "test-driven-development"
+  ],
+  "improve": [
+    "prompt-engineering"
+  ],
+  "incident": [
+    "seo-forensic-incident-response"
+  ],
+  "incidents": [
+    "error-debugging-error-analysis"
+  ],
+  "including": [
+    "prompt-caching",
+    "tool-design",
+    "web-security-testing"
+  ],
+  "independent": [
+    "parallel-agents"
+  ],
+  "index": [
+    "vector-index-tuning"
+  ],
+  "indexing": [
+    "database-design",
+    "postgresql"
+  ],
+  "injection": [
+    "backend-dev-guidelines",
+    "web-security-testing"
+  ],
+  "input": [
+    "api-security-testing",
+    "game-development/mobile-games"
+  ],
+  "integration": [
+    "game-development/game-audio",
+    "langchain-architecture"
+  ],
+  "intentional": [
+    "frontend-design"
+  ],
+  "interact": [
+    "mcp-builder"
+  ],
+  "interacting": [
+    "webapp-testing"
+  ],
+  "interaction": [
+    "game-development/vr-ar",
+    "mobile-design"
+  ],
+  "interfaces": [
+    "frontend-design",
+    "ui-skills"
+  ],
+  "investigate": [
+    "seo-forensic-incident-response"
+  ],
+  "ios": [
+    "mobile-design"
+  ],
+  "issues": [
+    "prisma-expert",
+    "web-security-testing"
+  ],
+  "java": [
+    "java-pro"
+  ],
+  "javascript": [
+    "javascript-pro"
+  ],
+  "jest": [
+    "testing-patterns"
+  ],
+  "jotai": [
+    "react-state-management"
+  ],
+  "knowledge": [
+    "docker-expert"
+  ],
+  "lambda": [
+    "aws-serverless"
+  ],
+  "langchain": [
+    "langchain-architecture"
+  ],
+  "langgraph": [
+    "ai-agent-development",
+    "langgraph"
+  ],
+  "language": [
+    "app-builder"
+  ],
+  "latency": [
+    "vector-index-tuning"
+  ],
+  "layered": [
+    "backend-dev-guidelines"
+  ],
+  "learn": [
+    "prompt-engineering",
+    "top-web-vulnerabilities"
+  ],
+  "learning": [
+    "ai-ml"
+  ],
+  "limiting": [
+    "api-security-testing"
+  ],
+  "llm": [
+    "ai-ml",
+    "langchain-architecture",
+    "prompt-caching",
+    "rag-engineer"
+  ],
+  "llms": [
+    "mcp-builder"
+  ],
+  "local": [
+    "webapp-testing"
+  ],
+  "machine": [
+    "ai-ml"
+  ],
+  "main": [
+    "app-builder"
+  ],
+  "maintainability": [
+    "code-review-checklist"
+  ],
+  "major": [
+    "requesting-code-review"
+  ],
+  "making": [
+    "api-patterns",
+    "architecture",
+    "database-design",
+    "deployment-procedures",
+    "nodejs-best-practices"
+  ],
+  "management": [
+    "langgraph",
+    "react-state-management"
+  ],
+  "manager": [
+    "risk-manager"
+  ],
+  "managing": [
+    "react-state-management"
+  ],
+  "mapping": [
+    "vulnerability-scanner"
+  ],
+  "martin": [
+    "clean-code"
+  ],
+  "master": [
+    "react-state-management"
+  ],
+  "masters": [
+    "ai-agents-architect",
+    "rag-engineer"
+  ],
+  "mcp": [
+    "mcp-builder"
+  ],
+  "measurement": [
+    "performance-profiling"
+  ],
+  "meets": [
+    "requesting-code-review"
+  ],
+  "memory": [
+    "ai-agents-architect",
+    "langchain-architecture",
+    "vector-index-tuning"
+  ],
+  "mentions": [
+    "test-fixing"
+  ],
+  "merging": [
+    "requesting-code-review"
+  ],
+  "microservices": [
+    "backend-dev-guidelines"
+  ],
+  "migrations": [
+    "database",
+    "prisma-expert"
+  ],
+  "mitre": [
+    "red-team-tactics"
+  ],
+  "mobile": [
+    "game-development/mobile-games",
+    "mobile-design"
+  ],
+  "mocking": [
+    "testing-patterns"
+  ],
+  "model": [
+    "mcp-builder"
+  ],
+  "modeling": [
+    "prisma-expert"
+  ],
+  "models": [
+    "rag-engineer"
+  ],
+  "modern": [
+    "performance-engineer",
+    "react-nextjs-development",
+    "react-patterns",
+    "react-state-management",
+    "tailwind-patterns"
+  ],
+  "modes": [
+    "behavioral-modes"
+  ],
+  "multi": [
+    "ai-agent-development",
+    "ai-agents-architect",
+    "docker-expert",
+    "langgraph",
+    "parallel-agents",
+    "plan-writing"
+  ],
+  "multiplayer": [
+    "game-development/multiplayer"
+  ],
+  "multiple": [
+    "parallel-agents"
+  ],
+  "music": [
+    "game-development/game-audio"
+  ],
+  "natural": [
+    "app-builder"
+  ],
+  "needs": [
+    "game-development"
+  ],
+  "networking": [
+    "game-development/multiplayer"
+  ],
+  "new": [
+    "app-builder/templates"
+  ],
+  "next": [
+    "react-best-practices",
+    "react-nextjs-development"
+  ],
+  "next.js": [
+    "react-best-practices",
+    "react-nextjs-development"
+  ],
+  "nextjs": [
+    "react-nextjs-development"
+  ],
+  "node": [
+    "backend-dev-guidelines",
+    "javascript-pro",
+    "nodejs-best-practices"
+  ],
+  "nodejs": [
+    "nodejs-best-practices"
+  ],
+  "non": [
+    "frontend-design"
+  ],
+  "nosql": [
+    "database"
+  ],
+  "not": [
+    "deployment-procedures",
+    "nodejs-best-practices"
+  ],
+  "observability": [
+    "error-debugging-error-analysis",
+    "performance-engineer"
+  ],
+  "off": [
+    "architecture"
+  ],
+  "offline": [
+    "mobile-design"
+  ],
+  "often": [
+    "personal-tool-builder"
+  ],
+  "operational": [
+    "behavioral-modes"
+  ],
+  "operations": [
+    "database",
+    "prisma-expert"
+  ],
+  "opinionated": [
+    "backend-dev-guidelines",
+    "ui-skills"
+  ],
+  "optimization": [
+    "database",
+    "docker-expert",
+    "game-development/pc-games",
+    "game-development/web-games",
+    "geo-fundamentals",
+    "performance-profiling",
+    "prisma-expert",
+    "prompt-engineering",
+    "rag-engineer",
+    "rag-implementation",
+    "react-best-practices"
+  ],
+  "optimize": [
+    "vector-index-tuning"
+  ],
+  "optimizer": [
+    "database-optimizer"
+  ],
+  "orchestrate": [
+    "behavioral-modes"
+  ],
+  "orchestration": [
+    "ai-agent-development",
+    "ai-agents-architect",
+    "docker-expert",
+    "parallel-agents"
+  ],
+  "orchestrator": [
+    "app-builder",
+    "game-development"
+  ],
+  "organic": [
+    "seo-forensic-incident-response"
+  ],
+  "orm": [
+    "database-design",
+    "prisma-expert"
+  ],
+  "owasp": [
+    "vulnerability-scanner",
+    "web-security-testing"
+  ],
+  "own": [
+    "personal-tool-builder"
+  ],
+  "pagination": [
+    "api-patterns"
+  ],
+  "parallel": [
+    "parallel-agents"
+  ],
+  "parameters": [
+    "vector-index-tuning"
+  ],
+  "pattern": [
+    "backend-dev-guidelines"
+  ],
+  "patterns": [
+    "api-patterns",
+    "aws-serverless",
+    "docker-expert",
+    "langchain-architecture",
+    "nodejs-best-practices",
+    "parallel-agents",
+    "postgresql",
+    "prompt-engineering",
+    "react-nextjs-development",
+    "react-patterns",
+    "tailwind-patterns",
+    "testing-patterns",
+    "tool-design"
+  ],
+  "penetration": [
+    "security-audit"
+  ],
+  "performance": [
+    "code-review-checklist",
+    "game-development/mobile-games",
+    "game-development/vr-ar",
+    "mobile-design",
+    "performance-engineer",
+    "performance-profiling",
+    "postgresql",
+    "react-best-practices",
+    "react-patterns",
+    "vector-index-tuning"
+  ],
+  "perplexity": [
+    "geo-fundamentals"
+  ],
+  "personal": [
+    "personal-tool-builder"
+  ],
+  "phases": [
+    "red-team-tactics"
+  ],
+  "physics": [
+    "game-development/2d-games",
+    "game-development/3d-games"
+  ],
+  "pipeline": [
+    "game-development/game-art"
+  ],
+  "pipelines": [
+    "ai-ml"
+  ],
+  "plan": [
+    "executing-plans",
+    "plan-writing"
+  ],
+  "planning": [
+    "ai-agents-architect",
+    "plan-writing"
+  ],
+  "plans": [
+    "executing-plans"
+  ],
+  "platform": [
+    "game-development",
+    "game-development/pc-games",
+    "mobile-design"
+  ],
+  "player": [
+    "game-development/game-design"
+  ],
+  "playwright": [
+    "webapp-testing"
+  ],
+  "postgresql": [
+    "postgresql"
+  ],
+  "powered": [
+    "ai-ml"
+  ],
+  "practices": [
+    "api-security-testing",
+    "nodejs-best-practices",
+    "postgresql",
+    "prompt-engineering",
+    "react-best-practices",
+    "react-patterns"
+  ],
+  "principles": [
+    "api-patterns",
+    "clean-code",
+    "database-design",
+    "deployment-procedures",
+    "game-development/2d-games",
+    "game-development/3d-games",
+    "game-development/game-art",
+    "game-development/game-audio",
+    "game-development/game-design",
+    "game-development/mobile-games",
+    "game-development/multiplayer",
+    "game-development/pc-games",
+    "game-development/vr-ar",
+    "game-development/web-games",
+    "nodejs-best-practices",
+    "performance-profiling",
+    "react-patterns",
+    "red-team-tactics",
+    "tailwind-patterns",
+    "tdd-workflow",
+    "vulnerability-scanner"
+  ],
+  "prioritization": [
+    "vulnerability-scanner"
+  ],
+  "prioritizing": [
+    "codebase-cleanup-tech-debt"
+  ],
+  "prisma": [
+    "backend-dev-guidelines",
+    "prisma-expert"
+  ],
+  "pro": [
+    "fastapi-pro",
+    "java-pro",
+    "javascript-pro",
+    "python-pro",
+    "typescript-pro"
+  ],
+  "proactively": [
+    "prisma-expert"
+  ],
+  "problems": [
+    "personal-tool-builder"
+  ],
+  "procedures": [
+    "deployment-procedures"
+  ],
+  "production": [
+    "aws-serverless",
+    "deployment-procedures",
+    "docker-expert",
+    "error-debugging-error-analysis",
+    "frontend-design",
+    "langgraph"
+  ],
+  "products": [
+    "personal-tool-builder"
+  ],
+  "profiling": [
+    "performance-profiling"
+  ],
+  "progression": [
+    "game-development/game-design"
+  ],
+  "project": [
+    "app-builder",
+    "app-builder/templates",
+    "game-development"
+  ],
+  "projects": [
+    "app-builder/templates",
+    "codebase-cleanup-tech-debt"
+  ],
+  "prompt": [
+    "prompt-caching",
+    "prompt-engineering"
+  ],
+  "prompting": [
+    "prompt-engineering"
+  ],
+  "prompts": [
+    "prompt-caching",
+    "prompt-engineering"
+  ],
+  "proposing": [
+    "systematic-debugging"
+  ],
+  "protocol": [
+    "mcp-builder"
+  ],
+  "psychology": [
+    "game-development/game-design"
+  ],
+  "pwa": [
+    "game-development/web-games"
+  ],
+  "python": [
+    "python-pro"
+  ],
+  "quality": [
+    "clean-code",
+    "mcp-builder",
+    "software-architecture"
+  ],
+  "quantifying": [
+    "codebase-cleanup-tech-debt"
+  ],
+  "quantization": [
+    "vector-index-tuning"
+  ],
+  "queries": [
+    "tailwind-patterns"
+  ],
+  "query": [
+    "prisma-expert",
+    "react-state-management"
+  ],
+  "rag": [
+    "ai-ml",
+    "rag-engineer",
+    "rag-implementation"
+  ],
+  "rankings": [
+    "seo-forensic-incident-response"
+  ],
+  "rate": [
+    "api-security-testing"
+  ],
+  "react": [
+    "react-best-practices",
+    "react-nextjs-development",
+    "react-patterns",
+    "react-state-management"
+  ],
+  "readability": [
+    "clean-code"
+  ],
+  "readme": [
+    "documentation-templates"
+  ],
+  "ready": [
+    "aws-serverless"
+  ],
+  "reasoning": [
+    "brainstorming"
+  ],
+  "recall": [
+    "vector-index-tuning"
+  ],
+  "recovery": [
+    "seo-forensic-incident-response"
+  ],
+  "red": [
+    "red-team-tactics",
+    "tdd-workflow"
+  ],
+  "redis": [
+    "database-architect"
+  ],
+  "reduction": [
+    "tool-design"
+  ],
+  "redux": [
+    "react-state-management"
+  ],
+  "refactor": [
+    "tdd-workflow"
+  ],
+  "refactoring": [
+    "clean-code",
+    "plan-writing",
+    "react-best-practices"
+  ],
+  "relations": [
+    "prisma-expert"
+  ],
+  "rendering": [
+    "game-development/3d-games"
+  ],
+  "reporting": [
+    "red-team-tactics"
+  ],
+  "repositories": [
+    "backend-dev-guidelines"
+  ],
+  "requesting": [
+    "requesting-code-review"
+  ],
+  "requests": [
+    "app-builder"
+  ],
+  "requirements": [
+    "architecture",
+    "game-development/vr-ar",
+    "requesting-code-review"
+  ],
+  "requires": [
+    "parallel-agents"
+  ],
+  "response": [
+    "api-patterns",
+    "prompt-caching",
+    "seo-forensic-incident-response"
+  ],
+  "rest": [
+    "api-patterns",
+    "api-security-testing"
+  ],
+  "retrieval": [
+    "rag-engineer",
+    "rag-implementation"
+  ],
+  "review": [
+    "behavioral-modes",
+    "code-review-checklist",
+    "executing-plans",
+    "requesting-code-review"
+  ],
+  "reviewing": [
+    "clean-code",
+    "react-best-practices"
+  ],
+  "reviews": [
+    "code-review-checklist"
+  ],
+  "risk": [
+    "risk-manager",
+    "vulnerability-scanner"
+  ],
+  "robert": [
+    "clean-code"
+  ],
+  "rollback": [
+    "deployment-procedures"
+  ],
+  "root": [
+    "seo-forensic-incident-response"
+  ],
+  "router": [
+    "react-nextjs-development"
+  ],
+  "routes": [
+    "game-development"
+  ],
+  "run": [
+    "parallel-agents",
+    "seo-forensic-incident-response",
+    "test-fixing"
+  ],
+  "safe": [
+    "deployment-procedures"
+  ],
+  "scaffolding": [
+    "app-builder/templates"
+  ],
+  "scaling": [
+    "vector-index-tuning"
+  ],
+  "scanner": [
+    "vulnerability-scanner"
+  ],
+  "scanning": [
+    "security-audit"
+  ],
+  "schema": [
+    "database-design",
+    "postgresql",
+    "prisma-expert"
+  ],
+  "scratch": [
+    "app-builder/templates",
+    "personal-tool-builder"
+  ],
+  "screenshots": [
+    "webapp-testing"
+  ],
+  "scripts": [
+    "deployment-procedures"
+  ],
+  "search": [
+    "geo-fundamentals",
+    "vector-index-tuning"
+  ],
+  "security": [
+    "api-security-testing",
+    "code-review-checklist",
+    "docker-expert",
+    "nodejs-best-practices",
+    "security-audit",
+    "security-bluebook-builder",
+    "top-web-vulnerabilities",
+    "vulnerability-scanner",
+    "web-security-testing"
+  ],
+  "selecting": [
+    "vector-index-tuning"
+  ],
+  "selection": [
+    "api-patterns",
+    "database-design",
+    "game-development/game-art",
+    "game-development/pc-games",
+    "game-development/web-games",
+    "nodejs-best-practices",
+    "rag-implementation"
+  ],
+  "selects": [
+    "app-builder"
+  ],
+  "sensitive": [
+    "security-bluebook-builder"
+  ],
+  "seo": [
+    "seo-audit",
+    "seo-forensic-incident-response",
+    "seo-fundamentals",
+    "seo-structure-architect"
+  ],
+  "separate": [
+    "executing-plans"
+  ],
+  "server": [
+    "react-nextjs-development",
+    "react-state-management"
+  ],
+  "serverless": [
+    "aws-serverless",
+    "database-design"
+  ],
+  "servers": [
+    "mcp-builder"
+  ],
+  "services": [
+    "mcp-builder"
+  ],
+  "session": [
+    "executing-plans"
+  ],
+  "setting": [
+    "react-state-management"
+  ],
+  "setup": [
+    "rag-implementation"
+  ],
+  "shaders": [
+    "game-development/3d-games"
+  ],
+  "ship": [
+    "behavioral-modes"
+  ],
+  "should": [
+    "react-best-practices",
+    "software-architecture",
+    "top-web-vulnerabilities"
+  ],
+  "skill": [
+    "aws-serverless",
+    "clean-code",
+    "react-best-practices",
+    "software-architecture",
+    "top-web-vulnerabilities"
+  ],
+  "skills": [
+    "game-development",
+    "ui-skills"
+  ],
+  "smart": [
+    "test-fixing"
+  ],
+  "sns": [
+    "aws-serverless"
+  ],
+  "software": [
+    "codebase-cleanup-tech-debt",
+    "software-architecture"
+  ],
+  "solutions": [
+    "error-debugging-error-analysis"
+  ],
+  "solve": [
+    "personal-tool-builder"
+  ],
+  "sound": [
+    "game-development/game-audio"
+  ],
+  "specialist": [
+    "error-debugging-error-analysis"
+  ],
+  "specialized": [
+    "aws-serverless"
+  ],
+  "specializing": [
+    "codebase-cleanup-tech-debt",
+    "performance-engineer"
+  ],
+  "specific": [
+    "game-development",
+    "postgresql"
+  ],
+  "sprites": [
+    "game-development/2d-games"
+  ],
+  "sql": [
+    "database"
+  ],
+  "sqs": [
+    "aws-serverless"
+  ],
+  "stack": [
+    "app-builder"
+  ],
+  "stacks": [
+    "app-builder/templates"
+  ],
+  "stage": [
+    "docker-expert"
+  ],
+  "standards": [
+    "backend-dev-guidelines"
+  ],
+  "start": [
+    "personal-tool-builder"
+  ],
+  "state": [
+    "langgraph",
+    "react-state-management"
+  ],
+  "stateful": [
+    "langgraph"
+  ],
+  "step": [
+    "plan-writing"
+  ],
+  "stores": [
+    "game-development/mobile-games"
+  ],
+  "strategies": [
+    "ai-agents-architect",
+    "deployment-procedures",
+    "game-development/pc-games",
+    "prompt-caching",
+    "prompt-engineering",
+    "rag-engineer",
+    "rag-implementation",
+    "testing-patterns",
+    "vector-index-tuning"
+  ],
+  "strategy": [
+    "database-design"
+  ],
+  "structure": [
+    "documentation-templates",
+    "game-development/game-design",
+    "seo-structure-architect"
+  ],
+  "structured": [
+    "plan-writing",
+    "seo-forensic-incident-response"
+  ],
+  "style": [
+    "game-development/game-art"
+  ],
+  "styling": [
+    "frontend-design"
+  ],
+  "sudden": [
+    "seo-forensic-incident-response"
+  ],
+  "supply": [
+    "vulnerability-scanner"
+  ],
+  "supports": [
+    "webapp-testing"
+  ],
+  "surface": [
+    "vulnerability-scanner"
+  ],
+  "synchronization": [
+    "game-development/multiplayer"
+  ],
+  "system": [
+    "architecture"
+  ],
+  "systematic": [
+    "systematic-debugging"
+  ],
+  "systematically": [
+    "test-fixing"
+  ],
+  "systems": [
+    "ai-agent-development",
+    "ai-agents-architect",
+    "error-debugging-error-analysis",
+    "game-development/game-audio",
+    "rag-engineer"
+  ],
+  "tactics": [
+    "red-team-tactics"
+  ],
+  "tailwind": [
+    "react-nextjs-development",
+    "tailwind-patterns"
+  ],
+  "task": [
+    "behavioral-modes",
+    "plan-writing"
+  ],
+  "tasks": [
+    "parallel-agents",
+    "requesting-code-review"
+  ],
+  "tdd": [
+    "tdd-workflow",
+    "testing-patterns"
+  ],
+  "teach": [
+    "behavioral-modes"
+  ],
+  "teaches": [
+    "deployment-procedures",
+    "nodejs-best-practices"
+  ],
+  "team": [
+    "red-team-tactics"
+  ],
+  "tech": [
+    "app-builder",
+    "app-builder/templates",
+    "codebase-cleanup-tech-debt"
+  ],
+  "technical": [
+    "codebase-cleanup-tech-debt"
+  ],
+  "techniques": [
+    "performance-profiling",
+    "prompt-engineering"
+  ],
+  "templates": [
+    "app-builder/templates",
+    "documentation-templates"
+  ],
+  "test": [
+    "systematic-debugging",
+    "tdd-workflow",
+    "test-driven-development",
+    "test-fixing",
+    "testing-patterns"
+  ],
+  "testing": [
+    "api-security-testing",
+    "security-audit",
+    "testing-patterns",
+    "web-security-testing",
+    "webapp-testing"
+  ],
+  "tests": [
+    "test-fixing",
+    "testing-patterns"
+  ],
+  "thinking": [
+    "deployment-procedures",
+    "nodejs-best-practices"
+  ],
+  "thorough": [
+    "code-review-checklist"
+  ],
+  "through": [
+    "brainstorming",
+    "mcp-builder"
+  ],
+  "tilemaps": [
+    "game-development/2d-games"
+  ],
+  "token": [
+    "tailwind-patterns"
+  ],
+  "tool": [
+    "ai-agents-architect",
+    "langchain-architecture",
+    "personal-tool-builder",
+    "tool-design"
+  ],
+  "toolkit": [
+    "react-state-management",
+    "webapp-testing"
+  ],
+  "tools": [
+    "personal-tool-builder",
+    "tool-design"
+  ],
+  "top": [
+    "top-web-vulnerabilities",
+    "web-security-testing"
+  ],
+  "touch": [
+    "game-development/mobile-games",
+    "mobile-design"
+  ],
+  "trade": [
+    "architecture"
+  ],
+  "traffic": [
+    "seo-forensic-incident-response"
+  ],
+  "transforms": [
+    "brainstorming"
+  ],
+  "triage": [
+    "seo-forensic-incident-response"
+  ],
+  "troubleshooter": [
+    "devops-troubleshooter"
+  ],
+  "trpc": [
+    "api-patterns"
+  ],
+  "tuning": [
+    "vector-index-tuning"
+  ],
+  "type": [
+    "app-builder",
+    "behavioral-modes"
+  ],
+  "types": [
+    "postgresql"
+  ],
+  "typescript": [
+    "api-patterns",
+    "backend-dev-guidelines",
+    "react-nextjs-development",
+    "react-patterns",
+    "typescript-pro"
+  ],
+  "uncover": [
+    "codebase-cleanup-tech-debt"
+  ],
+  "understand": [
+    "top-web-vulnerabilities"
+  ],
+  "unexpected": [
+    "systematic-debugging"
+  ],
+  "unit": [
+    "testing-patterns"
+  ],
+  "used": [
+    "react-best-practices",
+    "software-architecture",
+    "top-web-vulnerabilities"
+  ],
+  "user": [
+    "prompt-engineering",
+    "test-fixing",
+    "top-web-vulnerabilities"
+  ],
+  "users": [
+    "software-architecture"
+  ],
+  "vague": [
+    "brainstorming"
+  ],
+  "valid": [
+    "backend-dev-guidelines"
+  ],
+  "validated": [
+    "brainstorming"
+  ],
+  "validation": [
+    "api-security-testing"
+  ],
+  "various": [
+    "app-builder/templates"
+  ],
+  "vector": [
+    "rag-engineer",
+    "rag-implementation",
+    "vector-index-tuning"
+  ],
+  "vercel": [
+    "react-best-practices"
+  ],
+  "verification": [
+    "deployment-procedures",
+    "plan-writing"
+  ],
+  "verify": [
+    "requesting-code-review"
+  ],
+  "verifying": [
+    "webapp-testing"
+  ],
+  "versioning": [
+    "api-patterns"
+  ],
+  "visual": [
+    "frontend-design",
+    "game-development/game-art"
+  ],
+  "vulnerabilities": [
+    "top-web-vulnerabilities",
+    "web-security-testing"
+  ],
+  "vulnerability": [
+    "security-audit",
+    "top-web-vulnerabilities",
+    "vulnerability-scanner"
+  ],
+  "want": [
+    "software-architecture"
+  ],
+  "wants": [
+    "prompt-engineering"
+  ],
+  "web": [
+    "game-development/web-games",
+    "security-audit",
+    "top-web-vulnerabilities",
+    "web-security-testing",
+    "webapp-testing"
+  ],
+  "webapp": [
+    "webapp-testing"
+  ],
+  "webgpu": [
+    "game-development/web-games"
+  ],
+  "well": [
+    "mcp-builder"
+  ],
+  "when": [
+    "ai-agents-architect",
+    "app-builder/templates",
+    "architecture",
+    "clean-code",
+    "executing-plans",
+    "frontend-design",
+    "langchain-architecture",
+    "parallel-agents",
+    "plan-writing",
+    "prompt-caching",
+    "prompt-engineering",
+    "react-best-practices",
+    "react-state-management",
+    "requesting-code-review",
+    "software-architecture",
+    "systematic-debugging",
+    "test-driven-development",
+    "test-fixing",
+    "testing-patterns",
+    "top-web-vulnerabilities",
+    "ui-skills",
+    "vector-index-tuning"
+  ],
+  "work": [
+    "brainstorming",
+    "plan-writing",
+    "requesting-code-review"
+  ],
+  "workflow": [
+    "ai-agent-development",
+    "ai-ml",
+    "api-security-testing",
+    "database",
+    "game-development/game-art",
+    "rag-implementation",
+    "security-audit",
+    "tdd-workflow",
+    "testing-patterns",
+    "web-security-testing"
+  ],
+  "workflows": [
+    "deployment-procedures"
+  ],
+  "write": [
+    "software-architecture"
+  ],
+  "writing": [
+    "clean-code",
+    "plan-writing",
+    "react-best-practices",
+    "test-driven-development",
+    "testing-patterns"
+  ],
+  "written": [
+    "executing-plans"
+  ],
+  "xss": [
+    "web-security-testing"
+  ],
+  "you": [
+    "codebase-cleanup-tech-debt",
+    "error-debugging-error-analysis",
+    "executing-plans"
+  ],
+  "your": [
+    "personal-tool-builder"
+  ],
+  "zod": [
+    "backend-dev-guidelines"
+  ],
+  "zustand": [
+    "react-state-management"
+  ]
+}

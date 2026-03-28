@@ -1,0 +1,22 @@
+{
+    "_readme": "Copy this file to ~/.gemini/genesis-forge/mcp_config.json and fill in your API keys.",
+    "_docs": "See agent/docs/CONFIG.md for full setup instructions.",
+    "mcpServers": {
+        "context7": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@upstash/context7-mcp",
+                "--api-key",
+                "${CONTEXT7_API_KEY}"
+            ]
+        },
+        "shadcn": {
+            "command": "npx",
+            "args": [
+                "shadcn@latest",
+                "mcp"
+            ]
+        }
+    }
+}

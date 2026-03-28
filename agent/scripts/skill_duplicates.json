@@ -1,0 +1,415 @@
+{
+  "frontend": [
+    {
+      "name": "react-state-management",
+      "line_count": 451,
+      "description": "Master modern React state management with Redux Toolkit, Zustand, Jotai, and React Query. Use when s"
+    },
+    {
+      "name": "docker-expert",
+      "line_count": 420,
+      "description": "Docker containerization expert with deep knowledge of multi-stage builds, image optimization, contai"
+    },
+    {
+      "name": "langchain-architecture",
+      "line_count": 360,
+      "description": "Design LLM applications using the LangChain framework with agents, memory, and tool integration patt"
+    },
+    {
+      "name": "backend-dev-guidelines",
+      "line_count": 355,
+      "description": "Opinionated backend development standards for Node.js + Express + TypeScript microservices. Covers l"
+    },
+    {
+      "name": "tool-design",
+      "line_count": 326,
+      "description": "Build tools that agents can use effectively, including architectural reduction patterns"
+    },
+    {
+      "name": "personal-tool-builder",
+      "line_count": 301,
+      "description": "Expert in building custom tools that solve your own problems first. The best products often start as"
+    },
+    {
+      "name": "langgraph",
+      "line_count": 299,
+      "description": "Expert in LangGraph - the production-grade framework for building stateful, multi-actor AI applicati"
+    },
+    {
+      "name": "frontend-design",
+      "line_count": 284,
+      "description": "Create distinctive, production-grade frontend interfaces with intentional aesthetics, high craft, an"
+    },
+    {
+      "name": "tailwind-patterns",
+      "line_count": 282,
+      "description": "Tailwind CSS v4 principles. CSS-first configuration, container queries, modern patterns, design toke"
+    },
+    {
+      "name": "mcp-builder",
+      "line_count": 248,
+      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact wi"
+    },
+    {
+      "name": "react-nextjs-development",
+      "line_count": 235,
+      "description": "React and Next.js 14+ application development with App Router, Server Components, TypeScript, Tailwi"
+    },
+    {
+      "name": "react-patterns",
+      "line_count": 210,
+      "description": "Modern React patterns and principles. Hooks, composition, performance, TypeScript best practices."
+    },
+    {
+      "name": "documentation-templates",
+      "line_count": 206,
+      "description": "Documentation templates and structure guidelines. README, API docs, code comments, and AI-friendly d"
+    },
+    {
+      "name": "parallel-agents",
+      "line_count": 184,
+      "description": "Multi-agent orchestration patterns. Use when multiple independent tasks can run with different domai"
+    },
+    {
+      "name": "prompt-engineering",
+      "line_count": 184,
+      "description": "Expert guide on prompt engineering patterns, best practices, and optimization techniques. Use when u"
+    },
+    {
+      "name": "ai-agent-development",
+      "line_count": 180,
+      "description": "AI agent development workflow for building autonomous agents, multi-agent systems, and agent orchest"
+    },
+    {
+      "name": "game-development/vr-ar",
+      "line_count": 135,
+      "description": "VR/AR development principles. Comfort, interaction, performance requirements."
+    },
+    {
+      "name": "react-best-practices",
+      "line_count": 134,
+      "description": "React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be "
+    },
+    {
+      "name": "test-fixing",
+      "line_count": 129,
+      "description": "Run tests and systematically fix all failing tests using smart error grouping. Use when user asks to"
+    },
+    {
+      "name": "requesting-code-review",
+      "line_count": 118,
+      "description": "Use when completing tasks, implementing major features, or before merging to verify work meets requi"
+    },
+    {
+      "name": "webapp-testing",
+      "line_count": 109,
+      "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying"
+    },
+    {
+      "name": "ai-agents-architect",
+      "line_count": 102,
+      "description": "Expert in designing and building autonomous AI agents. Masters tool use, memory systems, planning st"
+    },
+    {
+      "name": "rag-engineer",
+      "line_count": 102,
+      "description": "Expert in building Retrieval-Augmented Generation systems. Masters embedding models, vector database"
+    },
+    {
+      "name": "software-architecture",
+      "line_count": 88,
+      "description": "Guide for quality focused software architecture. This skill should be used when users want to write "
+    },
+    {
+      "name": "app-builder",
+      "line_count": 87,
+      "description": "Main application building orchestrator. Creates full-stack applications from natural language reques"
+    },
+    {
+      "name": "architecture",
+      "line_count": 67,
+      "description": "Architectural decision-making framework. Requirements analysis, trade-off evaluation, ADR documentat"
+    },
+    {
+      "name": "app-builder/templates",
+      "line_count": 51,
+      "description": "Project scaffolding templates for new applications. Use when creating new projects from scratch. Con"
+    },
+    {
+      "name": "security-bluebook-builder",
+      "line_count": 30,
+      "description": "Build security Blue Books for sensitive apps"
+    },
+    {
+      "name": "ui-skills",
+      "line_count": 30,
+      "description": "Opinionated, evolving constraints to guide agents when building interfaces"
+    }
+  ],
+  "ai_ml": [
+    {
+      "name": "ai-ml",
+      "line_count": 259,
+      "description": "AI and machine learning workflow covering LLM application development, RAG implementation, agent arc"
+    },
+    {
+      "name": "behavioral-modes",
+      "line_count": 254,
+      "description": "AI operational modes (brainstorm, implement, debug, review, teach, ship, orchestrate). Use to adapt "
+    },
+    {
+      "name": "brainstorming",
+      "line_count": 239,
+      "description": "Use before creative or constructive work (features, architecture, behavior). Transforms vague ideas "
+    },
+    {
+      "name": "ai-engineer",
+      "line_count": 192,
+      "description": "|"
+    },
+    {
+      "name": "geo-fundamentals",
+      "line_count": 168,
+      "description": "Generative Engine Optimization for AI search engines (ChatGPT, Claude, Perplexity)."
+    },
+    {
+      "name": "clean-code",
+      "line_count": 101,
+      "description": "Applies principles from Robert C. Martin's 'Clean Code'. Use this skill when writing, reviewing, or "
+    },
+    {
+      "name": "prompt-caching",
+      "line_count": 73,
+      "description": "Caching strategies for LLM prompts including Anthropic prompt caching, response caching, and CAG (Ca"
+    }
+  ],
+  "backend": [
+    {
+      "name": "nodejs-best-practices",
+      "line_count": 348,
+      "description": "Node.js development principles and decision-making. Framework selection, async patterns, security, a"
+    },
+    {
+      "name": "backend-architect",
+      "line_count": 337,
+      "description": "|"
+    },
+    {
+      "name": "security-audit",
+      "line_count": 224,
+      "description": "Comprehensive security auditing workflow covering web application testing, API security, penetration"
+    },
+    {
+      "name": "fastapi-pro",
+      "line_count": 197,
+      "description": "|"
+    },
+    {
+      "name": "api-documenter",
+      "line_count": 190,
+      "description": "|"
+    },
+    {
+      "name": "api-security-testing",
+      "line_count": 178,
+      "description": "API security testing workflow for REST and GraphQL APIs covering authentication, authorization, rate"
+    },
+    {
+      "name": "api-patterns",
+      "line_count": 93,
+      "description": "API design principles and decision-making. REST vs GraphQL vs tRPC selection, response formats, vers"
+    },
+    {
+      "name": "database-design",
+      "line_count": 64,
+      "description": "Database design principles and decision-making. Schema design, indexing strategy, ORM selection, ser"
+    }
+  ],
+  "aws": [
+    {
+      "name": "top-web-vulnerabilities",
+      "line_count": 553,
+      "description": "This skill should be used when the user asks to \\\"identify web application vulnerabilities\\\", \\\"expl"
+    },
+    {
+      "name": "aws-serverless",
+      "line_count": 335,
+      "description": "Specialized skill for building production-ready serverless applications on AWS. Covers Lambda functi"
+    },
+    {
+      "name": "web-security-testing",
+      "line_count": 190,
+      "description": "Web application security testing workflow for OWASP Top 10 vulnerabilities including injection, XSS,"
+    }
+  ],
+  "testing": [
+    {
+      "name": "codebase-cleanup-tech-debt",
+      "line_count": 396,
+      "description": "You are a technical debt expert specializing in identifying, quantifying, and prioritizing technical"
+    },
+    {
+      "name": "test-driven-development",
+      "line_count": 381,
+      "description": "Use when implementing any feature or bugfix, before writing implementation code"
+    },
+    {
+      "name": "systematic-debugging",
+      "line_count": 306,
+      "description": "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes"
+    },
+    {
+      "name": "mobile-design",
+      "line_count": 298,
+      "description": "Mobile-first design and engineering doctrine for iOS and Android apps. Covers touch interaction, per"
+    },
+    {
+      "name": "testing-patterns",
+      "line_count": 273,
+      "description": "Jest testing patterns, factory functions, mocking strategies, and TDD workflow. Use when writing uni"
+    },
+    {
+      "name": "performance-engineer",
+      "line_count": 184,
+      "description": "Expert performance engineer specializing in modern observability,"
+    },
+    {
+      "name": "game-development",
+      "line_count": 176,
+      "description": "Game development orchestrator. Routes to platform-specific skills based on project needs."
+    },
+    {
+      "name": "tdd-workflow",
+      "line_count": 161,
+      "description": "Test-Driven Development workflow principles. RED-GREEN-REFACTOR cycle."
+    },
+    {
+      "name": "error-debugging-error-analysis",
+      "line_count": 57,
+      "description": "You are an expert error analysis specialist with deep expertise in debugging distributed systems, an"
+    }
+  ],
+  "database": [
+    {
+      "name": "prisma-expert",
+      "line_count": 368,
+      "description": "Prisma ORM expert for schema design, migrations, query optimization, relations modeling, and databas"
+    },
+    {
+      "name": "database-architect",
+      "line_count": 271,
+      "description": "|"
+    },
+    {
+      "name": "postgresql",
+      "line_count": 241,
+      "description": "Design a PostgreSQL-specific schema. Covers best-practices, data types, indexing, constraints, perfo"
+    },
+    {
+      "name": "database",
+      "line_count": 219,
+      "description": "Database development and operations workflow covering SQL, NoSQL, database design, migrations, optim"
+    },
+    {
+      "name": "rag-implementation",
+      "line_count": 203,
+      "description": "RAG (Retrieval-Augmented Generation) implementation workflow covering embedding selection, vector da"
+    },
+    {
+      "name": "database-optimizer",
+      "line_count": 170,
+      "description": "|"
+    }
+  ],
+  "general": [
+    {
+      "name": "red-team-tactics",
+      "line_count": 211,
+      "description": "Red team tactics principles based on MITRE ATT&CK. Attack phases, detection evasion, reporting."
+    },
+    {
+      "name": "plan-writing",
+      "line_count": 161,
+      "description": "Structured task planning with clear breakdowns, dependencies, and verification criteria. Use when im"
+    },
+    {
+      "name": "performance-profiling",
+      "line_count": 155,
+      "description": "Performance profiling principles. Measurement, analysis, and optimization techniques."
+    },
+    {
+      "name": "risk-manager",
+      "line_count": 67,
+      "description": "|"
+    },
+    {
+      "name": "debugger",
+      "line_count": 56,
+      "description": "|"
+    },
+    {
+      "name": "vector-index-tuning",
+      "line_count": 52,
+      "description": "Optimize vector index performance for latency, recall, and memory. Use when tuning HNSW parameters, "
+    }
+  ],
+  "game": [
+    {
+      "name": "game-development/game-audio",
+      "line_count": 202,
+      "description": "Game audio principles. Sound design, music integration, adaptive audio systems."
+    },
+    {
+      "name": "game-development/web-games",
+      "line_count": 162,
+      "description": "Web browser game development principles. Framework selection, WebGPU, optimization, PWA."
+    },
+    {
+      "name": "game-development/pc-games",
+      "line_count": 156,
+      "description": "PC and console game development principles. Engine selection, platform features, optimization strate"
+    },
+    {
+      "name": "game-development/3d-games",
+      "line_count": 147,
+      "description": "3D game development principles. Rendering, shaders, physics, cameras."
+    },
+    {
+      "name": "game-development/multiplayer",
+      "line_count": 144,
+      "description": "Multiplayer game development principles. Architecture, networking, synchronization."
+    },
+    {
+      "name": "game-development/game-design",
+      "line_count": 141,
+      "description": "Game design principles. GDD structure, balancing, player psychology, progression."
+    },
+    {
+      "name": "game-development/2d-games",
+      "line_count": 131,
+      "description": "2D game development principles. Sprites, tilemaps, physics, camera."
+    }
+  ],
+  "seo": [
+    {
+      "name": "seo-audit",
+      "line_count": 495,
+      "description": ">"
+    },
+    {
+      "name": "seo-forensic-incident-response",
+      "line_count": 269,
+      "description": "Investigate sudden drops in organic traffic or rankings and run a structured forensic SEO incident r"
+    },
+    {
+      "name": "seo-fundamentals",
+      "line_count": 183,
+      "description": ">"
+    },
+    {
+      "name": "seo-structure-architect",
+      "line_count": 114,
+      "description": "|"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+#!/usr/bin/env env -S bash
+# .agent/hooks/session-start
+# ============================================================
+# Runs at the start of every Genesis Forge session.
+# Wires route_task.py, complexity_classifier.py, and session_memory.py
+# into a single pre-prompt context block.
+#
+# Replace your existing .agent/hooks/session-start with this file.
+# ============================================================
+
+set -euo pipefail
+
+AGENT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+SCRIPTS="$AGENT_DIR/scripts"
+
+# ── 1. Increment session counter & load persisted memory ──────────────────────
+echo ""
+echo "╔══════════════════════════════════════════╗"
+echo "║     Genesis Forge - Session Start      ║"
+echo "╚══════════════════════════════════════════╝"
+echo ""
+
+python3 "$SCRIPTS/session_memory.py" session-start 2>/dev/null || true
+
+# ── 2. Validate critical scripts exist ────────────────────────────────────────
+REQUIRED_SCRIPTS=(
+    "route_task.py"
+    "complexity_classifier.py"
+    "agent_output_schema.py"
+    "retry_handler.py"
+    "session_memory.py"
+    "mid_task_verify.py"
+)
+
+echo "[ Checking scripts ]"
+ALL_OK=true
+for script in "${REQUIRED_SCRIPTS[@]}"; do
+    if [[ -f "$SCRIPTS/$script" ]]; then
+        echo "  ✓ $script"
+    else
+        echo "  ✗ MISSING: $script"
+        ALL_OK=false
+    fi
+done
+
+if [[ "$ALL_OK" == "false" ]]; then
+    echo ""
+    echo "⚠ Some scripts are missing. Install from:"
+    echo "  https://github.com/your-repo/agent-improvements"
+    echo ""
+fi
+
+# ── 3. Route current task if GENESIS_TASK is set ─────────────────────────
+if [[ -n "${GENESIS_TASK:-}" ]]; then
+    echo ""
+    echo "[ Routing task ]"
+    ROUTE=$(python3 "$SCRIPTS/route_task.py" "$GENESIS_TASK" 2>/dev/null)
+    COMPLEXITY=$(python3 "$SCRIPTS/complexity_classifier.py" "$GENESIS_TASK" 2>/dev/null)
+
+    echo "  Task: $GENESIS_TASK"
+    echo "  Complexity: $(echo "$COMPLEXITY" | python3 -c "import sys,json; d=json.load(sys.stdin); print(d['complexity'])" 2>/dev/null || echo "unknown")"
+    echo "  Agents: $(echo "$ROUTE" | python3 -c "import sys,json; d=json.load(sys.stdin); print(', '.join(d['agents']))" 2>/dev/null || echo "unknown")"
+    echo "  Workflow: $(echo "$ROUTE" | python3 -c "import sys,json; d=json.load(sys.stdin); print(d['workflow'])" 2>/dev/null || echo "unknown")"
+
+    # Export for agent prompts
+    export GENESIS_ROUTE="$ROUTE"
+    export GENESIS_COMPLEXITY="$COMPLEXITY"
+fi
+
+# ── 4. Check for PLAN.md if task is complex ───────────────────────────────────
+PLAN_EXISTS="NO"
+if [[ -f "docs/PLAN.md" ]]; then
+    PLAN_EXISTS="YES"
+    echo ""
+    echo "[ Plan ] docs/PLAN.md found ✓"
+elif [[ -f "PLAN.md" ]]; then
+    PLAN_EXISTS="YES"
+    echo ""
+    echo "[ Plan ] PLAN.md found ✓"
+else
+    echo ""
+    echo "[ Plan ] No PLAN.md found"
+fi
+export GENESIS_PLAN_EXISTS="$PLAN_EXISTS"
+
+# ── 5. Inject context block ───────────────────────────────────────────────────
+echo ""
+echo "[ Session Memory ]"
+python3 "$SCRIPTS/session_memory.py" inject 2>/dev/null || echo "  (no previous session data)"
+
+# ── 6. Print model behavior summary ──────────────────────────────────────────
+echo ""
+echo "[ Mode Summary ]"
+echo "  Loki Mode:  AUTO (route_task.py handles selection)"
+echo "  Swarm Mode: $([ "${COMPLEXITY:-}" ] && echo "ELIGIBLE if complexity=COMPLEX" || echo "N/A (no task set)")"
+echo "  Schema:     agent_output_schema.py (JSON handoffs enforced)"
+echo "  Retry:      retry_handler.py (max 2 retries per agent)"
+echo ""
+echo "══════════════════════════════════════════"
+echo "  Ready. All agent outputs MUST be JSON."
+echo "══════════════════════════════════════════"
+echo ""

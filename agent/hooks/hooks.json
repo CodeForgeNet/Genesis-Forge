@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node '${AGENT_ROOT}/agent/hooks/run-hook.js' session-start",
+            "async": false
+          }
+        ]
+      }
+    ]
+  }
+}

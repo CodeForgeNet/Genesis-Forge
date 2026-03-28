@@ -5,6 +5,7 @@
 > **Multi-agent AI Orchestration Provider** — 24 specialist agents, 80 skills, and 13 automated workflows for Gemini and Claude CLIs.
 
 [![npm version](https://img.shields.io/npm/v/genesis-forge.svg)](https://npmjs.com/package/genesis-forge)
+[![npm downloads](https://img.shields.io/npm/dt/genesis-forge.svg)](https://www.npmjs.com/package/genesis-forge)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Node.js >= 18](https://img.shields.io/badge/node-%3E%3D18-brightgreen)](https://nodejs.org)
 

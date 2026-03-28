@@ -1,6 +1,6 @@
 # Genesis Forge
 
-![Genesis Forge Hero Banner](assets/hero.jpeg)
+![Genesis Forge Hero Banner](assets/hero.png)
 
 > **Multi-agent AI Orchestration Provider** — 24 specialist agents, 80 skills, and 13 automated workflows for Gemini and Claude CLIs.
 

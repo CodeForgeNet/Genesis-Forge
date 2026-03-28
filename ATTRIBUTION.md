@@ -83,4 +83,4 @@ license: "MIT"
 ## Reporting Issues
 
 If you find a skill that appears to have an incompatible license or missing attribution, please open an issue at:
-https://github.com/[user]/genesis-forge/issues
+https://github.com/CodeForgeNet/Genesis-Forge/issues

@@ -22,9 +22,18 @@ Genesis Forge is a portable library of AI expertise. It is designed to work **in
 
 ---
 
-## 🚀 Quick Start (Automated Setup)
+## 🚀 Installation & Setup
 
-The easiest way to integrate Genesis Forge with your environment:
+### 1. Global Installation (Recommended)
+Install the CLI once to have the `genesis-forge` command available everywhere:
+
+```bash
+npm install -g genesis-forge
+genesis-forge setup
+```
+
+### 2. Using via npx
+Alternatively, run it without installing:
 
 ```bash
 npx genesis-forge setup
@@ -52,7 +61,7 @@ Once linked, the Gemini CLI will automatically use Genesis Forge's routing and s
 Claude-based tools use the **Model Context Protocol (MCP)** to discover dynamic tools.
 
 **Manual Setup:**
-1. Start the MCP server: `npx genesis-mcp`
+1. Start the MCP server: `genesis-mcp` (or `npx genesis-mcp`)
 2. Add the above command to your `claude-code` or `cline` configuration file.
 3. Claude will now see `skill_search`, `route_task`, and `get_skill_registry` as native tools.
 

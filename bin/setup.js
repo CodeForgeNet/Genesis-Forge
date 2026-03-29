@@ -79,15 +79,58 @@ function setupClaude() {
   }
 }
 
+function removeGemini() {
+  console.log('--- Removing Gemini CLI integration ---');
+  if (existsSync(GEMINI_TARGET)) {
+    try {
+      unlinkSync(GEMINI_TARGET);
+      console.log(`✅ Removed symlink: ${GEMINI_TARGET}`);
+    } catch (e) {
+      console.error(`❌ Failed to remove symlink at ${GEMINI_TARGET}: ${e.message}`);
+    }
+  } else {
+    console.log('Gemini CLI symlink not found, skipping.');
+  }
+}
+
+function removeClaude() {
+  console.log('\n--- Removing Claude CLI integration ---');
+  const CLAUDE_CONFIG = join(HOME, '.claude.json');
+  if (existsSync(CLAUDE_CONFIG)) {
+    try {
+      const content = readFileSync(CLAUDE_CONFIG, 'utf8');
+      const config = JSON.parse(content);
+      if (config.mcpServers && config.mcpServers['genesis-forge']) {
+        delete config.mcpServers['genesis-forge'];
+        writeFileSync(CLAUDE_CONFIG, JSON.stringify(config, null, 2));
+        console.log(`✅ Removed 'genesis-forge' from ${CLAUDE_CONFIG}`);
+      } else {
+        console.log("'genesis-forge' entry not found in Claude config.");
+      }
+    } catch (e) {
+      console.error(`❌ Failed to update Claude config: ${e.message}`);
+    }
+  } else {
+    console.log('Claude config not found, skipping.');
+  }
+}
+
 const args = process.argv.slice(2);
-if (args[0] === 'setup' || args.length === 0) {
+const command = args[0] || 'setup';
+
+if (command === 'setup') {
   setupGemini();
   setupClaude();
-} else if (args[0] === '--help' || args[0] === '-h') {
-  console.log('Usage: npx genesis-forge setup');
-  console.log('Automates the integration of Genesis Forge with Gemini and Claude CLIs.');
+} else if (command === 'remove' || command === 'unsetup' || command === 'uninstall') {
+  removeGemini();
+  removeClaude();
+} else if (command === '--help' || command === '-h') {
+  console.log('Usage: npx genesis-forge [setup|remove]');
+  console.log('\nCommands:');
+  console.log('  setup    Automates the integration of Genesis Forge with Gemini and Claude CLIs.');
+  console.log('  remove   Removes integrations (symlink and Claude MCP server) and cleans up config.');
 } else {
-  console.log(`Unknown command: ${args[0]}`);
-  console.log('Usage: npx genesis-forge setup');
+  console.log(`Unknown command: ${command}`);
+  console.log('Usage: npx genesis-forge [setup|remove]');
 }
 

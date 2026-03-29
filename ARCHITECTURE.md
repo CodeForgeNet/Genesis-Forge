@@ -1,6 +1,6 @@
 # Genesis Forge — Architecture
 
-24 agents | 900+ skills | 13 workflows
+24 agents | 90 skills | 13 workflows
 
 ## Agents
 

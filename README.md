@@ -2,7 +2,7 @@
 
 ![Genesis Forge Hero Banner](assets/hero.jpeg)
 
-> **Multi-agent AI Orchestration Provider** — 24 specialist agents, 80 skills, and 13 automated workflows for Gemini and Claude CLIs.
+> **Multi-agent AI Orchestration Provider** — 24 specialist agents, 90 skills, and 13 automated workflows for Gemini and Claude CLIs.
 
 [![npm version](https://img.shields.io/npm/v/genesis-forge.svg)](https://npmjs.com/package/genesis-forge)
 [![npm downloads](https://img.shields.io/npm/dt/genesis-forge.svg)](https://www.npmjs.com/package/genesis-forge)
@@ -16,7 +16,7 @@
 Genesis Forge is a portable library of AI expertise. It is designed to work **inside** your existing AI CLI environments (`gemini-cli`, `claude-code`, `cline`, etc.) rather than as a standalone tool.
 
 - **24 Specialist Agents**: Persona-driven experts (Frontend, Backend, Security, DevOps, etc.).
-- **80 Skill Modules**: Structured knowledge for 23 domains (React, k8s, OWASP, etc.).
+- **90 Skill Modules**: Structured knowledge for 23 domains (React, k8s, OWASP, etc.).
 - **13 Automated Workflows**: Slash-command style workflows like `/debug`, `/create`, `/orchestrate`.
 - **Integrated Routing**: Deterministic logic to pick the right agent and skill for any task.
 - **MCP Native**: Exposes all skills as tools for MCP-compatible clients (Claude, Cline).
@@ -33,17 +33,24 @@ npm install -g genesis-forge
 genesis-forge setup
 ```
 
+To remove the integrations later:
+```bash
+genesis-forge remove
+```
+
 ### 2. Using via npx
 Alternatively, run it without installing:
 
 ```bash
 npx genesis-forge setup
+# or to remove
+npx genesis-forge remove
 ```
 
 This command will:
-1. Detect your `~/.gemini/` and `~/.claude-code/` directories.
-2. Automate the symlinking of rules and configuration files.
-3. Guide you through finishing the integration.
+1. Detect your `~/.gemini/` and `~/.claude.json` configuration.
+2. Automate the symlinking of rules and MCP server configuration.
+3. Clean up and remove integrations when using the `remove` command.
 
 ---
 

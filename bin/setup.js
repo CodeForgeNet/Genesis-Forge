@@ -115,6 +115,7 @@ function removeClaude() {
   }
 }
 
+const pkg = JSON.parse(readFileSync(join(KIT_ROOT, 'package.json'), 'utf8'));
 const args = process.argv.slice(2);
 const command = args[0] || 'setup';
 
@@ -124,13 +125,16 @@ if (command === 'setup') {
 } else if (command === 'remove' || command === 'unsetup' || command === 'uninstall') {
   removeGemini();
   removeClaude();
+} else if (command === '--version' || command === '-v') {
+  console.log(`${pkg.name} v${pkg.version}`);
 } else if (command === '--help' || command === '-h') {
-  console.log('Usage: npx genesis-forge [setup|remove]');
+  console.log('Usage: npx genesis-forge [setup|remove|--version]');
   console.log('\nCommands:');
-  console.log('  setup    Automates the integration of Genesis Forge with Gemini and Claude CLIs.');
-  console.log('  remove   Removes integrations (symlink and Claude MCP server) and cleans up config.');
+  console.log('  setup          Automates the integration of Genesis Forge with Gemini and Claude CLIs.');
+  console.log('  remove         Removes integrations (symlink and Claude MCP server) and cleans up config.');
+  console.log('  --version, -v  Show the current version of Genesis Forge.');
 } else {
   console.log(`Unknown command: ${command}`);
-  console.log('Usage: npx genesis-forge [setup|remove]');
+  console.log('Usage: npx genesis-forge [setup|remove|--version]');
 }
 

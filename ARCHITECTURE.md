@@ -1,6 +1,6 @@
 # Genesis Forge — Architecture
 
-24 agents | 90 skills | 13 workflows
+24 agents | 79 skills | 13 workflows
 
 ## Agents
 
@@ -73,7 +73,7 @@ genesis-forge route "<task description>"
 agent/
 ├── rules/GEMINI.md       # Always-on global rules (optional Gemini CLI integration)
 ├── agents/               # 24 specialist agent personas
-├── skills/               # 900+ skill modules (SKILL.md per skill)
+├── skills/               # 79 skill modules (SKILL.md per skill)
 ├── workflows/            # 13 slash-command workflow files
 ├── scripts/              # Routing, validation, session memory scripts
 ├── docs/                 # Reference docs (CONFIG, GETTING_STARTED, WORKFLOWS)

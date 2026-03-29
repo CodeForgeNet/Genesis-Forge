@@ -167,7 +167,8 @@
     "seo-audit"
   ],
   "auditing": [
-    "security-audit"
+    "security-audit",
+    "vulnerability-scanner"
   ],
   "augmented": [
     "prompt-caching",
@@ -1319,7 +1320,8 @@
     "tool-design"
   ],
   "penetration": [
-    "security-audit"
+    "security-audit",
+    "vulnerability-scanner"
   ],
   "performance": [
     "code-review-checklist",
@@ -1942,6 +1944,7 @@
     "api-security-testing",
     "security-audit",
     "testing-patterns",
+    "vulnerability-scanner",
     "web-security-testing",
     "webapp-testing"
   ],

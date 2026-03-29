@@ -1,0 +1,128 @@
+{
+  "routing_rules": [
+    {
+      "keywords": ["pentest", "penetration", "exploit", "red team"],
+      "agents": ["penetration-tester", "security-auditor"],
+      "skills": ["red-team-tactics", "vulnerability-scanner"],
+      "workflow": "orchestrate"
+    },
+    {
+      "keywords": ["security", "vulnerability", "owasp", "auth", "authentication",
+                   "authorization", "jwt", "oauth", "csrf", "xss", "injection"],
+      "agents": ["security-auditor"],
+      "skills": ["vulnerability-scanner"],
+      "workflow": "orchestrate"
+    },
+    {
+      "keywords": ["bug", "error", "crash", "fix", "broken", "not working",
+                   "exception", "debug", "issue"],
+      "agents": ["debugger", "explorer-agent"],
+      "skills": ["systematic-debugging"],
+      "workflow": "debug"
+    },
+    {
+      "keywords": ["test", "spec", "coverage", "unit test", "e2e", "playwright",
+                   "jest", "vitest", "tdd", "mock"],
+      "agents": ["test-engineer"],
+      "skills": ["testing-patterns", "webapp-testing"],
+      "workflow": "test"
+    },
+    {
+      "keywords": ["ui", "component", "react", "nextjs", "vue", "svelte",
+                   "tailwind", "css", "html", "frontend"],
+      "agents": ["frontend-specialist"],
+      "skills": ["react-best-practices", "frontend-design"],
+      "workflow": "create"
+    },
+    {
+      "keywords": ["api", "endpoint", "route", "rest", "graphql", "server",
+                   "backend", "express", "fastapi", "nestjs"],
+      "agents": ["backend-specialist"],
+      "skills": ["api-patterns", "nodejs-best-practices"],
+      "workflow": "create"
+    },
+    {
+      "keywords": ["database", "schema", "migration", "prisma", "sql",
+                   "postgres", "mysql", "mongodb"],
+      "agents": ["database-architect"],
+      "skills": ["database-design", "prisma-expert"],
+      "workflow": "create"
+    },
+    {
+      "keywords": ["mobile", "ios", "android", "react native", "flutter", "expo"],
+      "agents": ["mobile-developer"],
+      "skills": ["mobile-design"],
+      "workflow": "create"
+    },
+    {
+      "keywords": ["deploy", "docker", "ci/cd", "pipeline", "kubernetes", "nginx"],
+      "agents": ["devops-engineer"],
+      "skills": ["deployment-procedures", "docker-expert"],
+      "workflow": "deploy"
+    },
+    {
+      "keywords": ["performance", "slow", "optimize", "lighthouse", "web vitals"],
+      "agents": ["performance-optimizer"],
+      "skills": ["performance-profiling"],
+      "workflow": "enhance"
+    },
+    {
+      "keywords": ["seo", "search engine", "meta tag", "ranking"],
+      "agents": ["seo-specialist"],
+      "skills": ["seo-fundamentals"],
+      "workflow": "enhance"
+    },
+    {
+      "keywords": ["game", "unity", "godot", "phaser"],
+      "agents": ["game-developer"],
+      "skills": ["game-development"],
+      "workflow": "create"
+    },
+    {
+      "keywords": ["plan", "roadmap", "brainstorm", "architecture"],
+      "agents": ["project-planner"],
+      "skills": ["plan-writing", "brainstorming"],
+      "workflow": "write-plan"
+    },
+    {
+      "keywords": ["review", "audit", "quality", "refactor"],
+      "agents": ["code-reviewer"],
+      "skills": ["code-review-checklist", "clean-code"],
+      "workflow": "enhance"
+    },
+    {
+      "keywords": ["full stack", "fullstack", "saas", "mvp", "entire app"],
+      "agents": ["project-planner", "frontend-specialist", "backend-specialist",
+                 "database-architect", "test-engineer", "devops-engineer"],
+      "skills": ["architecture", "react-best-practices", "api-patterns",
+                 "database-design", "testing-patterns"],
+      "workflow": "orchestrate"
+    }
+  ],
+  "domain_agent_map": {
+    "frontend": ["frontend-specialist"],
+    "backend":  ["backend-specialist"],
+    "database": ["database-architect"],
+    "testing":  ["test-engineer"],
+    "security": ["security-auditor"],
+    "devops":   ["devops-engineer"],
+    "mobile":   ["mobile-developer"],
+    "game":     ["game-developer"],
+    "seo":      ["seo-specialist"],
+    "ai_ml":    ["implementer-agent"],
+    "azure":    ["devops-engineer"],
+    "aws":      ["devops-engineer"],
+    "shell":    ["implementer-agent"],
+    "general":  ["implementer-agent"]
+  },
+  "parallel_map": [
+    {
+      "agents": ["frontend-specialist", "backend-specialist"],
+      "groups": [["frontend-specialist", "backend-specialist"], ["test-engineer"]]
+    },
+    {
+      "agents": ["security-auditor", "penetration-tester"],
+      "groups": [["security-auditor", "penetration-tester"]]
+    }
+  ]
+}

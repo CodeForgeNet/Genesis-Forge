@@ -1,13 +1,8 @@
 #!/usr/bin/env python3
 """
-route_task.py v2 - Deterministic Task Router (800+ Skills Edition)
-===================================================================
-Version 2 integrates with skill_registry.json built by build_skill_registry.py.
-Falls back to hardcoded routing table if registry not built yet.
-
-Usage:
-  python3 agent/scripts/route_task.py "fix the login api bug"
-  python3 agent/scripts/route_task.py "build a react dashboard" --tier low
+route_task.py v3 - Deterministic Task Router (90 Skills Edition)
+===============================================================
+Version 3 uses dynamic routing rules from routing_rules.json.
 """
 
 import sys
@@ -25,7 +20,7 @@ from utils import AGENT_ROOT, SCRIPTS_DIR, SKILLS_DIR
 
 REGISTRY_PATH = SCRIPTS_DIR / "skill_registry.json"
 SEARCH_INDEX_PATH = SCRIPTS_DIR / "skill_search_index.json"
-
+RULES_PATH = SCRIPTS_DIR / "routing_rules.json"
 
 @dataclass
 class RouteResult:
@@ -41,164 +36,23 @@ class RouteResult:
     model_tier: str = "mid"
     load_instructions: List[str] = field(default_factory=list)
 
-
-ROUTING_TABLE = [
-    {
-        "keywords": ["pentest", "penetration", "exploit", "red team"],
-        "agents": ["penetration-tester", "security-auditor"],
-        "skills": ["red-team-tactics", "vulnerability-scanner"],
-        "workflow": "orchestrate"
-    },
-    {
-        "keywords": ["security", "vulnerability", "owasp", "auth", "authentication",
-                     "authorization", "jwt", "oauth", "csrf", "xss", "injection"],
-        "agents": ["security-auditor"],
-        "skills": ["vulnerability-scanner"],
-        "workflow": "orchestrate"
-    },
-    {
-        "keywords": ["bug", "error", "crash", "fix", "broken", "not working",
-                     "exception", "debug", "issue"],
-        "agents": ["debugger", "explorer-agent"],
-        "skills": ["systematic-debugging"],
-        "workflow": "debug"
-    },
-    {
-        "keywords": ["test", "spec", "coverage", "unit test", "e2e", "playwright",
-                     "jest", "vitest", "tdd", "mock"],
-        "agents": ["test-engineer"],
-        "skills": ["testing-patterns", "webapp-testing"],
-        "workflow": "test"
-    },
-    {
-        "keywords": ["ui", "component", "react", "nextjs", "vue", "svelte",
-                     "tailwind", "css", "html", "frontend"],
-        "agents": ["frontend-specialist"],
-        "skills": ["react-best-practices", "frontend-design"],
-        "workflow": "create"
-    },
-    {
-        "keywords": ["api", "endpoint", "route", "rest", "graphql", "server",
-                     "backend", "express", "fastapi", "nestjs"],
-        "agents": ["backend-specialist"],
-        "skills": ["api-patterns", "nodejs-best-practices"],
-        "workflow": "create"
-    },
-    {
-        "keywords": ["database", "schema", "migration", "prisma", "sql",
-                     "postgres", "mysql", "mongodb"],
-        "agents": ["database-architect"],
-        "skills": ["database-design", "prisma-expert"],
-        "workflow": "create"
-    },
-    {
-        "keywords": ["mobile", "ios", "android", "react native", "flutter", "expo"],
-        "agents": ["mobile-developer"],
-        "skills": ["mobile-design"],
-        "workflow": "create"
-    },
-    {
-        "keywords": ["deploy", "docker", "ci/cd", "pipeline", "kubernetes", "nginx"],
-        "agents": ["devops-engineer"],
-        "skills": ["deployment-procedures", "docker-expert"],
-        "workflow": "deploy"
-    },
-    {
-        "keywords": ["performance", "slow", "optimize", "lighthouse", "web vitals"],
-        "agents": ["performance-optimizer"],
-        "skills": ["performance-profiling"],
-        "workflow": "enhance"
-    },
-    {
-        "keywords": ["seo", "search engine", "meta tag", "ranking"],
-        "agents": ["seo-specialist"],
-        "skills": ["seo-fundamentals"],
-        "workflow": "enhance"
-    },
-    {
-        "keywords": ["game", "unity", "godot", "phaser"],
-        "agents": ["game-developer"],
-        "skills": ["game-development"],
-        "workflow": "create"
-    },
-    {
-        "keywords": ["plan", "roadmap", "brainstorm", "architecture"],
-        "agents": ["project-planner"],
-        "skills": ["plan-writing", "brainstorming"],
-        "workflow": "write-plan"
-    },
-    {
-        "keywords": ["review", "audit", "quality", "refactor"],
-        "agents": ["code-reviewer"],
-        "skills": ["code-review-checklist", "clean-code"],
-        "workflow": "enhance"
-    },
-    {
-        "keywords": ["full stack", "fullstack", "saas", "mvp", "entire app"],
-        "agents": ["project-planner", "frontend-specialist", "backend-specialist",
-                   "database-architect", "test-engineer", "devops-engineer"],
-        "skills": ["architecture", "react-best-practices", "api-patterns",
-                   "database-design", "testing-patterns"],
-        "workflow": "orchestrate"
-    },
-]
-
-PARALLEL_MAP = {
-    frozenset(["frontend-specialist", "backend-specialist"]): [
-        ["frontend-specialist", "backend-specialist"], ["test-engineer"]
-    ],
-    frozenset(["security-auditor", "penetration-tester"]): [
-        ["security-auditor", "penetration-tester"]
-    ],
-}
-
 MODEL_LIMITS = {
     "low":  {"max_skills": 1, "content_mode": "tldr_only"},
     "mid":  {"max_skills": 2, "content_mode": "summary"},
     "high": {"max_skills": 4, "content_mode": "full"},
 }
 
-DOMAIN_AGENT_MAP = {
-    "frontend": ["frontend-specialist"],
-    "backend":  ["backend-specialist"],
-    "database": ["database-architect"],
-    "testing":  ["test-engineer"],
-    "security": ["security-auditor"],
-    "devops":   ["devops-engineer"],
-    "mobile":   ["mobile-developer"],
-    "game":     ["game-developer"],
-    "seo":      ["seo-specialist"],
-    "ai_ml":    ["implementer-agent"],
-    "azure":    ["devops-engineer"],
-    "aws":      ["devops-engineer"],
-    "shell":    ["implementer-agent"],
-    "general":  ["implementer-agent"],
-}
-
-
-def load_registry():
-    if REGISTRY_PATH.exists():
+def load_json(path: Path) -> Optional[Dict]:
+    if path.exists():
         try:
-            with open(REGISTRY_PATH) as f:
+            with open(path) as f:
                 return json.load(f)
         except (json.JSONDecodeError, IOError) as e:
-            print(f"[route_task] Warning: registry load failed — {e}", file=sys.stderr)
+            print(f"[route_task] Warning: {path.name} load failed — {e}", file=sys.stderr)
     return None
-
-
-def load_search_index():
-    if SEARCH_INDEX_PATH.exists():
-        try:
-            with open(SEARCH_INDEX_PATH) as f:
-                return json.load(f)
-        except (json.JSONDecodeError, IOError) as e:
-            print(f"[route_task] Warning: search index load failed — {e}", file=sys.stderr)
-    return None
-
 
 def build_load_instruction(skill: Dict, content_mode: str) -> str:
     skill_path = Path(skill["path"])
-    # Make path relative to AGENT_ROOT if it's absolute and inside the kit
     try:
         rel = skill_path.relative_to(AGENT_ROOT)
         display_path = str(rel)
@@ -213,8 +67,7 @@ def build_load_instruction(skill: Dict, content_mode: str) -> str:
         return f"READ first 1000 chars of {display_path}"
     return f"READ {display_path} (full content)"
 
-
-def route_with_registry(task: str, registry: Dict, search_index: Dict, tier: str) -> Optional[RouteResult]:
+def route_with_registry(task: str, registry: Dict, search_index: Dict, rules: Dict, tier: str) -> Optional[RouteResult]:
     task_lower = task.lower()
     tokens = set(re.findall(r'\b[a-zA-Z][a-zA-Z0-9+#]{2,}\b', task_lower))
     scores = defaultdict(float)
@@ -238,51 +91,47 @@ def route_with_registry(task: str, registry: Dict, search_index: Dict, tier: str
     ranked = sorted(scores.items(), key=lambda x: x[1], reverse=True)
     skill_lookup = {s["name"]: s for s in registry["skills"]}
     limits = MODEL_LIMITS[tier]
-    top_skills = []
-
-    for sn, score in ranked:
-        if sn in skill_lookup and score > 0.5:
-            top_skills.append(skill_lookup[sn])
-        if len(top_skills) >= limits["max_skills"]:
-            break
+    top_skills = [skill_lookup[sn] for sn, score in ranked if sn in skill_lookup and score > 0.5]
+    top_skills = top_skills[:limits["max_skills"]]
 
     if not top_skills:
         return None
 
     agents = []
+    domain_map = rules.get("domain_agent_map", {})
     for skill in top_skills:
-        for agent in DOMAIN_AGENT_MAP.get(skill.get("domain", "general"), ["implementer-agent"]):
+        for agent in domain_map.get(skill.get("domain", "general"), ["implementer-agent"]):
             if agent not in agents:
                 agents.append(agent)
 
-    skills = [s["name"] for s in top_skills]
-    skill_paths = [s["path"] for s in top_skills]
-    load_instructions = [build_load_instruction(s, limits["content_mode"]) for s in top_skills]
-
     complexity = "complex" if len(agents) >= 4 else "medium" if len(agents) >= 2 else "simple"
+    
+    # Calculate parallel groups
     parallel_groups = [[a] for a in agents]
-    for key, groups in PARALLEL_MAP.items():
-        if key.issubset(set(agents)):
-            parallel_groups = groups
+    for p_map in rules.get("parallel_map", []):
+        if set(p_map["agents"]).issubset(set(agents)):
+            parallel_groups = p_map["groups"]
             break
 
     return RouteResult(
-        agents=agents, skills=skills, skill_paths=skill_paths,
+        agents=agents, skills=[s["name"] for s in top_skills], 
+        skill_paths=[s["path"] for s in top_skills],
         workflow="orchestrate" if complexity == "complex" else "create",
         complexity=complexity, parallel_groups=parallel_groups,
         requires_plan=complexity in ("medium", "complex"),
         estimated_steps=len(agents),
-        rationale=f"Registry match ({len(registry['skills'])} skills indexed). Top: {skills[0]}. Tier: {tier}",
-        model_tier=tier, load_instructions=load_instructions,
+        rationale=f"Registry match (90 skills indexed). Top: {top_skills[0]['name']}. Tier: {tier}",
+        model_tier=tier, load_instructions=[build_load_instruction(s, limits["content_mode"]) for s in top_skills],
     )
 
-
-def route_fallback(task: str, tier: str) -> RouteResult:
+def route_fallback(task: str, rules: Dict, tier: str) -> RouteResult:
     task_lower = task.lower()
+    routing_table = rules.get("routing_rules", [])
+    
     scored = sorted(
         [(sum(1 for kw in r["keywords"] if kw in task_lower), r)
-         for r in ROUTING_TABLE if any(kw in task_lower for kw in r["keywords"])],
-        reverse=True
+         for r in routing_table if any(kw in task_lower for kw in r["keywords"])],
+        key=lambda x: x[0], reverse=True
     )
 
     limits = MODEL_LIMITS[tier]
@@ -294,7 +143,7 @@ def route_fallback(task: str, tier: str) -> RouteResult:
             skill_paths=[fallback_skill_path], workflow="create",
             complexity="simple", parallel_groups=[["implementer-agent"]],
             requires_plan=False, estimated_steps=1,
-            rationale="No match. Fallback. Run build_skill_registry.py for full coverage.",
+            rationale="No match. Fallback to clean-code defaults.",
             model_tier=tier, load_instructions=[f"READ {fallback_skill_path}"],
         )
 
@@ -307,7 +156,6 @@ def route_fallback(task: str, tier: str) -> RouteResult:
 
     skills = skills[:limits["max_skills"]]
     skill_paths = [str(SKILLS_DIR / s / "SKILL.md") for s in skills]
-    load_instructions = [f"READ {p}" for p in skill_paths]
     complexity = "complex" if len(agents) >= 4 else "medium" if len(agents) >= 2 else "simple"
 
     return RouteResult(
@@ -316,20 +164,20 @@ def route_fallback(task: str, tier: str) -> RouteResult:
         parallel_groups=[[a] for a in agents],
         requires_plan=complexity in ("medium", "complex"),
         estimated_steps=len(agents),
-        rationale="Hardcoded fallback. Run build_skill_registry.py for 800+ skill coverage.",
-        model_tier=tier, load_instructions=load_instructions,
+        rationale="Dynamic JSON rule match. Fallback from registry.",
+        model_tier=tier, load_instructions=[f"READ {p}" for p in skill_paths],
     )
 
-
 def route(task: str, tier: str = "mid") -> RouteResult:
-    registry = load_registry()
-    search_index = load_search_index()
+    registry = load_json(REGISTRY_PATH)
+    search_index = load_json(SEARCH_INDEX_PATH)
+    rules = load_json(RULES_PATH) or {"routing_rules": [], "domain_agent_map": {}, "parallel_map": []}
+    
     if registry and search_index:
-        result = route_with_registry(task, registry, search_index, tier)
+        result = route_with_registry(task, registry, search_index, rules, tier)
         if result:
             return result
-    return route_fallback(task, tier)
-
+    return route_fallback(task, rules, tier)
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:

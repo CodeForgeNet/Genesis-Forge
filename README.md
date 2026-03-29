@@ -2,7 +2,7 @@
 
 ![Genesis Forge Hero Banner](assets/hero.jpeg)
 
-> **Multi-agent AI Orchestration Provider** — 24 specialist agents, 90 skills, and 13 automated workflows for Gemini and Claude CLIs.
+> **Multi-agent AI Orchestration Provider** — 24 specialist agents, 79 skills, and 13 automated workflows for Gemini and Claude CLIs.
 
 [![npm version](https://img.shields.io/npm/v/genesis-forge.svg)](https://npmjs.com/package/genesis-forge)
 [![npm downloads](https://img.shields.io/npm/dt/genesis-forge.svg)](https://www.npmjs.com/package/genesis-forge)
@@ -16,7 +16,7 @@
 Genesis Forge is a portable library of AI expertise. It is designed to work **inside** your existing AI CLI environments (`gemini-cli`, `claude-code`, `cline`, etc.) rather than as a standalone tool.
 
 - **24 Specialist Agents**: Persona-driven experts (Frontend, Backend, Security, DevOps, etc.).
-- **90 Skill Modules**: Structured knowledge for 23 domains (React, k8s, OWASP, etc.).
+- **79 Skill Modules**: Structured knowledge for 23 domains (React, k8s, OWASP, etc.).
 - **13 Automated Workflows**: Slash-command style workflows like `/debug`, `/create`, `/orchestrate`.
 - **Integrated Routing**: Deterministic logic to pick the right agent and skill for any task.
 - **MCP Native**: Exposes all skills as tools for MCP-compatible clients (Claude, Cline).

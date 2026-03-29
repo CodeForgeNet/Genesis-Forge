@@ -22,8 +22,8 @@
     "frontend": "react-best-practices",
     "ai_ml": "ai-ml",
     "backend": "api-patterns",
-    "aws": "top-web-vulnerabilities",
     "security": "vulnerability-scanner",
+    "aws": "aws-serverless",
     "testing": "testing-patterns",
     "database": "prisma-expert",
     "general": "red-team-tactics",
@@ -192,7 +192,7 @@
       "name": "api-security-testing",
       "path": "agent/skills/api-security-testing/SKILL.md",
       "description": "API security testing workflow for REST and GraphQL APIs covering authentication, authorization, rate limiting, input validation, and security best practices.",
-      "domain": "backend",
+      "domain": "security",
       "keywords": [
         "api",
         "apis",
@@ -710,7 +710,7 @@
       "name": "docker-expert",
       "path": "agent/skills/docker-expert/SKILL.md",
       "description": "Docker containerization expert with deep knowledge of multi-stage builds, image optimization, container security, Docker Compose orchestration, and production deployment patterns. Use PROACTIVELY f...",
-      "domain": "frontend",
+      "domain": "security",
       "keywords": [
         "builds",
         "compose",
@@ -1339,7 +1339,7 @@
       "name": "nodejs-best-practices",
       "path": "agent/skills/nodejs-best-practices/SKILL.md",
       "description": "Node.js development principles and decision-making. Framework selection, async patterns, security, and architecture. Teaches thinking, not copying.",
-      "domain": "backend",
+      "domain": "security",
       "keywords": [
         "architecture",
         "async",
@@ -1900,7 +1900,7 @@
       "name": "security-audit",
       "path": "agent/skills/security-audit/SKILL.md",
       "description": "Comprehensive security auditing workflow covering web application testing, API security, penetration testing, vulnerability scanning, and security hardening.",
-      "domain": "backend",
+      "domain": "security",
       "keywords": [
         "api",
         "application",
@@ -1929,7 +1929,7 @@
       "name": "security-bluebook-builder",
       "path": "agent/skills/security-bluebook-builder/SKILL.md",
       "description": "Build security Blue Books for sensitive apps",
-      "domain": "frontend",
+      "domain": "security",
       "keywords": [
         "apps",
         "blue",
@@ -2264,7 +2264,7 @@
       "name": "top-web-vulnerabilities",
       "path": "agent/skills/top-web-vulnerabilities/SKILL.md",
       "description": "This skill should be used when the user asks to \\\"identify web application vulnerabilities\\\", \\\"explain common security flaws\\\", \\\"understand vulnerability categories\\\", \\\"learn about inject...",
-      "domain": "aws",
+      "domain": "security",
       "keywords": [
         "application",
         "asks",
@@ -2370,15 +2370,17 @@
     {
       "name": "vulnerability-scanner",
       "path": "agent/skills/vulnerability-scanner/SKILL.md",
-      "description": "Advanced vulnerability analysis principles. OWASP 2025, Supply Chain Security, attack surface mapping, risk prioritization.",
+      "description": "Advanced vulnerability analysis and penetration testing principles. OWASP 2025, Supply Chain Security, attack surface mapping, risk prioritization, and security auditing.",
       "domain": "security",
       "keywords": [
         "advanced",
         "analysis",
         "attack",
+        "auditing",
         "chain",
         "mapping",
         "owasp",
+        "penetration",
         "principles",
         "prioritization",
         "risk",
@@ -2386,6 +2388,7 @@
         "security",
         "supply",
         "surface",
+        "testing",
         "vulnerability"
       ],
       "line_count": 288,
@@ -2400,7 +2403,7 @@
       "name": "web-security-testing",
       "path": "agent/skills/web-security-testing/SKILL.md",
       "description": "Web application security testing workflow for OWASP Top 10 vulnerabilities including injection, XSS, authentication flaws, and access control issues.",
-      "domain": "aws",
+      "domain": "security",
       "keywords": [
         "access",
         "application",

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-build_skill_registry.py - Index All 800+ Skills
+build_skill_registry.py - Index All 90 Skills
 ================================================
 Run this ONCE against your agent/skills/ directory.
 It reads every SKILL.md, extracts metadata, and builds:
@@ -41,17 +41,28 @@ OUTPUT_SEARCH = SCRIPTS_DIR / "skill_search_index.json"
 OUTPUT_DUPLICATES = SCRIPTS_DIR / "skill_duplicates.json"
 
 
-def extract_frontmatter(content: str) -> Dict[str, str]:
-    """Extract YAML frontmatter from SKILL.md."""
+def extract_frontmatter(content: str, file_path: Path) -> Dict[str, str]:
+    """Extract YAML frontmatter from SKILL.md. Fails fast on malformed files."""
     fm = {}
-    if content.startswith("---"):
-        end = content.find("---", 3)
-        if end > 0:
-            block = content[3:end]
-            for line in block.strip().splitlines():
-                if ":" in line:
-                    k, _, v = line.partition(":")
-                    fm[k.strip()] = v.strip().strip('"').strip("'")
+    if not content.startswith("---"):
+        raise ValueError(f"Missing frontmatter start '---' in {file_path}")
+    
+    end = content.find("---", 3)
+    if end <= 0:
+        raise ValueError(f"Unclosed frontmatter in {file_path}")
+        
+    block = content[3:end]
+    for line in block.strip().splitlines():
+        if ":" in line:
+            k, _, v = line.partition(":")
+            fm[k.strip()] = v.strip().strip('"').strip("'")
+            
+    # CRITICAL VALIDATION
+    required = ["name", "description"]
+    missing = [f for f in required if f not in fm or not fm[f]]
+    if missing:
+        raise ValueError(f"Missing required frontmatter fields {missing} in {file_path}")
+        
     return fm
 
 
@@ -109,13 +120,13 @@ def detect_domain(skill_name: str, description: str) -> str:
     combined = name_lower + " " + desc_lower
 
     domain_patterns = {
+        "security": ["security", "pentest", "vulnerability", "owasp", "hack", "exploit", "auth"],
         "azure": ["azure"],
         "aws": ["aws", "amazon"],
         "frontend": ["react", "vue", "angular", "svelte", "nextjs", "frontend", "ui", "css", "tailwind", "html"],
         "backend": ["api", "server", "node", "express", "fastapi", "django", "flask", "nestjs", "backend"],
         "database": ["database", "sql", "postgres", "mysql", "mongodb", "redis", "prisma", "drizzle"],
         "testing": ["test", "spec", "jest", "vitest", "playwright", "tdd", "qa"],
-        "security": ["security", "pentest", "vulnerability", "owasp", "hack", "exploit", "auth"],
         "devops": ["docker", "kubernetes", "ci/cd", "deploy", "terraform", "helm", "devops"],
         "mobile": ["mobile", "ios", "android", "flutter", "swift", "kotlin", "react native"],
         "ai_ml": ["ai", "ml", "llm", "langchain", "rag", "agent", "openai", "anthropic"],
@@ -161,7 +172,11 @@ def scan_skills(skills_dir: Path) -> List[Dict[str, Any]]:
         rel_path = skill_md.parent.relative_to(skills_dir)
         skill_name = str(rel_path).replace(os.sep, "/")
 
-        fm = extract_frontmatter(content)
+        try:
+            fm = extract_frontmatter(content, skill_md)
+        except ValueError as e:
+            print(f"Skipping malformed skill: {e}")
+            continue
         description = extract_description(content, fm)
         keywords = extract_keywords(skill_name, description, content)
         domain = detect_domain(skill_name, description)

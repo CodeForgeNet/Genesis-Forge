@@ -6,11 +6,6 @@
       "description": "Master modern React state management with Redux Toolkit, Zustand, Jotai, and React Query. Use when s"
     },
     {
-      "name": "docker-expert",
-      "line_count": 420,
-      "description": "Docker containerization expert with deep knowledge of multi-stage builds, image optimization, contai"
-    },
-    {
       "name": "langchain-architecture",
       "line_count": 360,
       "description": "Design LLM applications using the LangChain framework with agents, memory, and tool integration patt"
@@ -136,11 +131,6 @@
       "description": "Project scaffolding templates for new applications. Use when creating new projects from scratch. Con"
     },
     {
-      "name": "security-bluebook-builder",
-      "line_count": 30,
-      "description": "Build security Blue Books for sensitive apps"
-    },
-    {
       "name": "ui-skills",
       "line_count": 30,
       "description": "Opinionated, evolving constraints to guide agents when building interfaces"
@@ -185,19 +175,9 @@
   ],
   "backend": [
     {
-      "name": "nodejs-best-practices",
-      "line_count": 348,
-      "description": "Node.js development principles and decision-making. Framework selection, async patterns, security, a"
-    },
-    {
       "name": "backend-architect",
       "line_count": 337,
       "description": "|"
-    },
-    {
-      "name": "security-audit",
-      "line_count": 224,
-      "description": "Comprehensive security auditing workflow covering web application testing, API security, penetration"
     },
     {
       "name": "fastapi-pro",
@@ -210,11 +190,6 @@
       "description": "|"
     },
     {
-      "name": "api-security-testing",
-      "line_count": 178,
-      "description": "API security testing workflow for REST and GraphQL APIs covering authentication, authorization, rate"
-    },
-    {
       "name": "api-patterns",
       "line_count": 93,
       "description": "API design principles and decision-making. REST vs GraphQL vs tRPC selection, response formats, vers"
@@ -225,21 +200,51 @@
       "description": "Database design principles and decision-making. Schema design, indexing strategy, ORM selection, ser"
     }
   ],
-  "aws": [
+  "security": [
     {
       "name": "top-web-vulnerabilities",
       "line_count": 553,
       "description": "This skill should be used when the user asks to \\\"identify web application vulnerabilities\\\", \\\"expl"
     },
     {
-      "name": "aws-serverless",
-      "line_count": 335,
-      "description": "Specialized skill for building production-ready serverless applications on AWS. Covers Lambda functi"
+      "name": "code-review-checklist",
+      "line_count": 454,
+      "description": "Comprehensive checklist for conducting thorough code reviews covering functionality, security, perfo"
+    },
+    {
+      "name": "docker-expert",
+      "line_count": 420,
+      "description": "Docker containerization expert with deep knowledge of multi-stage builds, image optimization, contai"
+    },
+    {
+      "name": "nodejs-best-practices",
+      "line_count": 348,
+      "description": "Node.js development principles and decision-making. Framework selection, async patterns, security, a"
+    },
+    {
+      "name": "vulnerability-scanner",
+      "line_count": 288,
+      "description": "Advanced vulnerability analysis and penetration testing principles. OWASP 2025, Supply Chain Securit"
+    },
+    {
+      "name": "security-audit",
+      "line_count": 224,
+      "description": "Comprehensive security auditing workflow covering web application testing, API security, penetration"
     },
     {
       "name": "web-security-testing",
       "line_count": 190,
       "description": "Web application security testing workflow for OWASP Top 10 vulnerabilities including injection, XSS,"
+    },
+    {
+      "name": "api-security-testing",
+      "line_count": 178,
+      "description": "API security testing workflow for REST and GraphQL APIs covering authentication, authorization, rate"
+    },
+    {
+      "name": "security-bluebook-builder",
+      "line_count": 30,
+      "description": "Build security Blue Books for sensitive apps"
     }
   ],
   "testing": [

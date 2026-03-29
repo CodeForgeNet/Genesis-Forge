@@ -2,7 +2,7 @@
 """
 skill_search.py - Fast Runtime Skill Lookup
 ============================================
-Replaces model-driven using-capabilities for 800+ skills.
+Replaces model-driven using-capabilities for 90 skills.
 Uses pre-built registry from build_skill_registry.py.
 
 At runtime, this is what gets called INSTEAD of the model

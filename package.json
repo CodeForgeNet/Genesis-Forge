@@ -1,6 +1,6 @@
 {
   "name": "genesis-forge",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A multi-agent AI orchestration kit with 79 skills, 24 specialist agents, and 13 slash-command workflows.",
   "type": "module",
   "main": "./lib/index.js",

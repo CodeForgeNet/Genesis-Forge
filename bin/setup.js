@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { existsSync, mkdirSync, symlinkSync, unlinkSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, symlinkSync, unlinkSync, readFileSync, writeFileSync, copyFileSync } from 'node:fs';
 import { resolve, join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import os from 'node:os';
@@ -22,22 +22,34 @@ function setupGemini() {
   }
 
   if (existsSync(GEMINI_TARGET)) {
-    console.log(`Removing existing symlink: ${GEMINI_TARGET}`);
     try {
       unlinkSync(GEMINI_TARGET);
     } catch (e) {
-      console.error(`Failed to remove existing file/symlink: ${GEMINI_TARGET}. Please remove it manually.`);
-      return;
+      // If unlink fails, we'll try to overwrite it later anyway
     }
   }
 
   try {
-    console.log(`Creating symlink: ${GEMINI_TARGET} -> ${RULES_FILE}`);
-    symlinkSync(RULES_FILE, GEMINI_TARGET);
-    console.log('✅ Gemini CLI rules installed.');
+    const isWindows = os.platform() === 'win32';
+    const symlinkType = isWindows ? 'file' : null;
+    
+    console.log(`Attempting to create symlink: ${GEMINI_TARGET} -> ${RULES_FILE}`);
+    symlinkSync(RULES_FILE, GEMINI_TARGET, symlinkType);
+    console.log('✅ Gemini CLI rules installed (symlink).');
   } catch (e) {
-    console.error(`❌ Failed to create symlink: ${e.message}`);
-    console.log(`Manual instruction: Copy ${RULES_FILE} to ${GEMINI_TARGET}`);
+    if (e.code === 'EPERM' || e.code === 'EACCES') {
+      console.warn(`⚠️ Symlink failed (permissions). Falling back to direct copy...`);
+      try {
+        copyFileSync(RULES_FILE, GEMINI_TARGET);
+        console.log('✅ Gemini CLI rules installed (direct copy).');
+      } catch (err) {
+        console.error(`❌ Failed to copy file: ${err.message}`);
+        console.log(`Manual instruction: Copy ${RULES_FILE} to ${GEMINI_TARGET}`);
+      }
+    } else {
+      console.error(`❌ Failed to create symlink: ${e.message}`);
+      console.log(`Manual instruction: Copy ${RULES_FILE} to ${GEMINI_TARGET}`);
+    }
   }
 
   if (!existsSync(GENESIS_STATE_DIR)) {

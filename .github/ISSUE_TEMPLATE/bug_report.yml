@@ -1,0 +1,47 @@
+name: Bug report
+description: Create a report to help us improve
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us what you expected to happen
+      placeholder: Tell us what you see!
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: How can we reproduce it?
+      description: Steps or commands you ran
+      placeholder: |
+        1. Run '... '
+        2. See error '... '
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Genesis Forge Version
+      description: What version are you running? (Check with 'genesis-forge --version' if applicable, or package.json)
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Infrastructure Check
+      options:
+        - label: I have updated to the latest version.
+          required: false
+        - label: I have searched the issues for a duplicate.
+          required: true

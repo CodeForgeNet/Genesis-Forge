@@ -122,6 +122,10 @@ python3 agent/scripts/build_skill_registry.py
 
 ---
 
+## 🤝 Contributing
+
+Contributions are welcome! Please see [CONTRIBUTING.md](./CONTRIBUTING.md) to get started.
+
 ## 📄 License
 
 MIT — see [LICENSE](./LICENSE)

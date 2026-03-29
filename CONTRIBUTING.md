@@ -6,7 +6,7 @@ Thank you for contributing! This guide explains how to add agents, skills, workf
 
 ## Code of Conduct
 
-Be excellent to each other. See [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md) if it exists.
+Be excellent to each other. See [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md) for community standards.
 
 ---
 
